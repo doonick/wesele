@@ -5,138 +5,41 @@
 <title>Wesele Ania & Andrzej – Pałac i Folwark Łochów</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:#faf8f6; color:#353535; }
+body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:#faf8f6; color:#353535;}
 .container { max-width:600px; margin:auto; padding:16px; }
 img { max-width:100%; height:auto; border-radius:12px; margin-bottom:16px;}
+.centered-img { display: block; margin: 16px auto;}
 h1, h2 { color:#7a6337; margin-top:18px; margin-bottom:8px;}
 .section { margin-bottom:24px;}
 .map { box-shadow: 0 4px 12px rgba(60,60,60,.15); border:1px solid #eee;}
-.contact { background:#f0ece8; border-radius:8px; padding:10px; margin-bottom:24px;}
 ul { padding-left:18px; margin-top: 0; }
 ul li { margin-bottom: 10px; }
 p { margin-bottom: 16px; }
-.video-container {
-    width: 95%;
-    max-width: 420px;
-    margin: 0 auto 18px auto;
-    background: #eee;
-    border-radius:12px;
-    overflow:hidden;
-}
-.video-container iframe {
-    width:100%;
-    height:225px;
-    max-width:420px;
-    border:0;
-    display:block;
-}
-@media (min-width: 601px) {
-    .video-container { max-width: 560px; }
-    .video-container iframe { height:315px; max-width:560px; }
-}
-a.btn {
-    display:inline-block;
-    background:#7a6337;
-    color:#fff;
-    text-decoration:none;
-    padding:10px 20px;
-    border-radius:8px;
-    font-size:1.1em;
-    margin:8px 4px;
-    transition: background-color 0.3s ease;
-}
+.bold { font-weight:bold; color:#222;}
+.video-container { width: 95%; max-width: 420px; margin: 0 auto 18px auto; background: #eee; border-radius:12px; overflow:hidden;}
+.video-container iframe { width:100%; height:225px; max-width:420px; border:0; display:block; }
+@media (min-width: 601px) { .video-container { max-width: 560px; } .video-container iframe { height:315px; max-width:560px; } }
+a.btn { display:inline-block; background:#7a6337; color:#fff; text-decoration:none; padding:10px 20px; border-radius:8px; font-size:1.1em; margin:8px 4px; transition: background-color 0.3s ease;}
 a.btn:hover { background:#5f4a29; }
-.menu-shortcuts {
-    margin: 0 0 20px 0;
-    padding:14px 8px;
-    background:#f9f4ee;
-    border-radius:8px;
-    font-size:1em;
-    text-align:center;
-}
-.menu-shortcuts a {
-    color:#7a6337;
-    text-decoration:underline;
-    margin: 0 10px 10px 0;
-    display:inline-block;
-    font-weight:bold;
-}
-.menu-shortcuts a:hover {
-    color:#5f4a29;
-    text-decoration:none;
-}
-.backtotop {
-    text-align:center;
-    margin:24px 0;
-}
-.backtotop a {
-    color:#5f4a29;
-    text-decoration:underline;
-    font-size:1em;
-    font-weight: bold;
-}
-iframe.map-responsive {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    border: 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(60,60,60,.15);
-}
-.bold { font-weight: bold; }
-.rsvp-extra {
-    background: #f9f4ee;
-    max-width: 420px;
-    margin: 0 auto 24px auto;
-    padding: 18px 12px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(60,60,60,.10);
-    text-align: left;
-}
-.gform-container {
-    width: 95%;
-    max-width: 520px;
-    margin: 0 auto 36px auto;
-    background: #fff7ed;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(120,110,80,.09);
-    padding: 20px 0 28px 0;
-}
-.gform-container iframe {
-    width: 100%;
-    min-height: 950px;
-    max-width: 520px;
-    border: 0;
-    display: block;
-    border-radius: 8px;
-}
-.gallery-section {
-    background: #f9f4ee;
-    border-radius: 12px;
-    padding:18px 12px;
-    max-width: 520px;
-    margin: 0 auto 32px auto;
-    box-shadow: 0 2px 10px rgba(60,60,60,.09);
-    text-align: center;
-}
-.gallery-section h2 {
-    color:#7a6337;
-    font-size:1.25em;
-    margin-top:0;
-    margin-bottom:12px;
-}
-.gallery-section p {
-    font-size:1em;
-    color:#555;
-}
+.menu-shortcuts { margin: 0 0 20px 0; padding:14px 8px; background:#f9f4ee; border-radius:8px; font-size:1em; text-align:center;}
+.menu-shortcuts a { color:#7a6337; text-decoration:underline; margin: 0 10px 10px 0; display:inline-block; font-weight:bold;}
+.menu-shortcuts a:hover { color:#5f4a29; text-decoration:none;}
+.backtotop { text-align:center; margin:24px 0;}
+.backtotop a { color:#5f4a29; text-decoration:underline; font-size:1em; font-weight: bold;}
+iframe.map-responsive { width: 100%; max-width: 600px; height: 450px; border: 0; border-radius: 12px; box-shadow: 0 4px 12px rgba(60,60,60,.15);}
+.gform-container { width: 95%; max-width: 520px; margin: 0 auto 36px auto; background: #fff7ed; border-radius: 12px; box-shadow: 0 2px 10px rgba(120,110,80,.09); padding: 20px 0 28px 0;}
+.gform-container iframe { width: 100%; min-height: 950px; max-width: 520px; border: 0; display: block; border-radius: 8px;}
+.gallery-section, .add-calendar-section { background: #f9f4ee; border-radius: 12px; padding:18px 12px; max-width: 520px; margin: 0 auto 32px auto; box-shadow: 0 2px 10px rgba(60,60,60,.09); text-align: center;}
+.gallery-section h2, .add-calendar-section h2 { color:#7a6337; font-size:1.25em; margin-top:4px; margin-bottom:12px;}
+.gallery-section p, .add-calendar-section p { font-size:1em; color:#555; }
+.contact { background:#f0ece8; border-radius:8px; padding:10px; margin:36px auto 0 auto; max-width:500px;}
 @media (max-width: 600px) {
     .container { padding:8px; }
     h1 { font-size:1.6em; }
     h2 { font-size:1.2em; }
-    .rsvp-extra { padding: 12px 4px; }
     .gform-container { padding:12px 0 20px 0;}
     .contact { padding:8px; }
-    .gallery-section{padding:10px 2px;}
+    .gallery-section, .add-calendar-section{padding:10px 2px;}
     .menu-shortcuts { font-size:0.97em; }
 }
 </style>
@@ -144,243 +47,203 @@ iframe.map-responsive {
 <body>
 <a name="top"></a>
 <div class="container">
-    <h1>Wesele Ani i Andrzeja</h1>
-    <h2>INFORMATOR WESELNY</h2>
-    <h3>4–5 lipca 2026, Pałac i Folwark Łochów</h3>
-    <p>ul. Marii Konopnickiej 1 | Łochów <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank" rel="noopener">Mapy Google</a> </p>
-    <div class="section"><img src="Folwark.jpg" loading="lazy" alt="[translate:Mapa Pałacu i Folwarku Łochów]" class="map"/></div>
-    <div class="section">
-        <strong>Kochani!</strong>
-        <p>Z wielką radością zapraszamy Was na uroczystość naszych zaślubin oraz przyjęcie weselne w niezwykłym otoczeniu <strong>Pałacu i Folwarku Łochów</strong>.</p>
-        <p>Msza ślubna odbędzie się o godz. <strong>16:00</strong> w zabytkowym <strong>Kościele Miłosierdzia Bożego</strong> na terenie kompleksu pałacowego, zaś przyjęcie weselne odbędzie się w <strong>Kuchni Pałacowej i Oranżerii</strong>.</p>
-        <p>Jeśli to możliwe, przyjedźcie do nas wcześniej, bowiem zarezerwowaliśmy dla każdego z Was <strong>pokój hotelowy</strong>, do którego <strong>zameldowanie</strong> będzie od godz. <strong>14:00 do 15:30 w Recepcji Wozowni</strong>.</p>
-        <p>Poniżej znajdziecie najważniejsze informacje. Mamy nadzieję, że będziecie się bawić wspaniale (i na luziku!).</p>
-        <p>Ściskamy mocno!<br><strong>Ania i Andrzej</strong></p>
-    </div>
-    <div class="menu-shortcuts">
-        <span>Przejdź do sekcji: </span>
-        <a href="#harmonogram">Harmonogram</a>
-        <a href="#noclegi">Noclegi</a>
-        <a href="#poprawiny">Niedziela poprawinowa</a>
-        <a href="#lokalizacja">Lokalizacja i dojazd</a>
-        <a href="#rsvp">RSVP</a>
-        <a href="#hist-palac">Historia Pałacu</a>
-        <a href="#hist-kosciol">Historia Kościoła</a>
-        <a href="#kontakt">Numery kontaktowe</a>
-        <a href="#zdjecia">Wspólne zdjęcia</a>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-    <div class="section" id="harmonogram">
-        <h2>Harmonogram</h2>
-        <p>Przybliżony harmonogram wesela:</p>
-        <ul>
-            <li><b>Sobota, 4 lipca 2026:</b>
-                <ul>
-                  <li>14:00–15:30 Zameldowanie w pokojach hotelowych <strong>- recepcja w Wozowni</strong></li>
-                  <li>16:00 <strong>Ceremonia zaślubin</strong> w zabytkowym <strong>Kościele Miłosierdzia Bożego</strong> w Łochowie</li>
-                  <li>16:45 Wspólne zdjęcie pod kościołem</li>
-                  <li>17:00 Życzenia na <strong>Wyspie Pisarzy i Poetów</strong></li>
-                  <li>18:00 Staropolskie powitanie i aperitif</li>
-                  <li>18:30 Uroczysta kolacja w <strong>Kuchni Pałacowej</strong></li>
-                  <li>20:00 Część taneczna w <strong>Oranżerii</strong></li>
-                  <li>22:00 Serwis dania gorącego</li>
-                </ul>
-            </li>
-            <li><b>Niedziela, 5 lipca 2026:</b>
-                <ul>
-                  <li>00:00 <strong>Tort weselny</strong></li>
-                  <li>01:00 <strong>Oczepiny</strong></li>
-                  <li>02:00 Zabawa do białego rana</li>
-                  <li>04:00 <strong>Powitanie dnia z Parą Młodą nad Liwcem</strong></li>
-                  <li>04:21 Wschód Słońca</li>
-                  <li>05:00... ZZzzz... słodkie sny w pokojach hotelowych</li>
-                  <li>09:00-11:00 <strong>Śniadanie poprawinowe</strong> w <strong>Restauracji Paśnik</strong></li>
-                  <li>11:00 Piknik poprawinowy w Folwarku</li>
-                  <li>14:00 Grill i ognisko w <strong>Wiacie nad Liwcem</strong></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-    <div class="section" id="noclegi">
-        <h2>Noclegi</h2>
-        <ul>
-            <li>Pokoje hotelowe znajdują się w <strong>Wozowni i Pałacu</strong></li>
-            <li>Po zaparkowaniu samochodu udajcie się do <strong>recepcji hotelowej w budynku Wozowni</strong>, gdzie otrzymacie klucz do pokoju</li>
-            <li>Każdy pokój jest z prywatną łazienką i ręcznikami</li>
-            <li><strong>Zameldowanie</strong> w sobotę w godz. <strong>14:00-15:30</strong></li>
-            <li><strong>Wymeldowanie</strong> w niedzielę do godz. <strong>10:00</strong></li>
-            <li>Po wymeldowaniu zanieście swoje rzeczy do samochodów i kierujcie się na <strong>Śniadanie Poprawinowe</strong> do <strong>Restauracji Paśnik</strong>, które będzie serwowane w godz. <strong>9:00-11:00</strong>.</li>
-        </ul>
-        <div class="section">
-            <img src="teren.jpg" loading="lazy" alt="[translate:Mapa terenu Pałacu i Folwarku Łochów]" class="map"/>
-        </div>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-    <div class="section" id="poprawiny">
-        <h2>Niedziela poprawinowa</h2>
-        <ul>
-            <li>Wszyscy goście w ramach pobytu mają dostęp do całego <strong>kompleksu Pałacu i Folwarku Łochów, w tym strefy SPA z basenem i saunami</strong> (przy recepcji obok restauracji Paśnik) oraz całego terenu obiektu, na którym znajdują się m.in. <strong>urokliwa rzeka Liwiec oraz mini zoo</strong> położone niedaleko restauracji Paśnik</li>
-            <li>W godzinach <strong>9:00-11:00</strong> zapraszamy Was na serwowane w formie bufetu <strong>śniadanie poprawinowe</strong> w <strong>Restauracji Paśnik</strong></li>
-            <li>Trzymając kciuki za dobrą pogodę, zapraszamy Was do spędzenia z nami niedzieli poprawinowej w formie <strong>pikniku nad rzeką Liwiec</strong> na terenie Folwarku</li>
-            <li>O <strong>14:00</strong> odpalamy <strong>grilla i ognisko poprawinowe</strong> w <strong>Wiacie nad Liwcem</strong></li>
-            <li>Warto zabrać ze sobą: wygodne letnie ubrania, strój kąpielowy, ręcznik, koc piknikowy, nakrycie głowy (kapelusz lub czapkę), okulary przeciwsłoneczne, krem z filtrem UV, SUPa, materac do wody, ręcznik do sauny (i... parasolkę, jeśli prognozy pogody będą kapryśne...)</li>
-        </ul>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-    <div class="section" id="lokalizacja">
-        <h2>Lokalizacja i dojazd</h2>
-        <div><b>Adres:</b>Pałac i Folwark Łochów, ul. Marii Konopnickiej 1, Łochów</div>
-        <div><a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank" rel="noopener">Mapy Google</a></div>
-        <div><b>Parking:</b> Bezpłatny parking dla gości weselnych dostępny jest na terenie kompleksu z tyłu budynku Wozowni</div>
-        <p><b>Jak dojechać?</b> Najwygodniej samochodem! Wrzućcie w nawigację adres: <strong>ul. Marii Konopnickiej 1, Łochów</strong> lub kliknijcie <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank" rel="noopener">tutaj</a>, żeby przejść do mapy Google. Siadajcie wygodnie w fotelach, zapinajcie pasy i jedźcie ostrożnie! Pamiętajcie, że dojazd z Warszawy, Łomży czy Zambrowa zajmuje około 1h. Wyjedźcie odpowiednio wcześniej i cieszcie się widokiem za oknem pięknych terenów pogranicza Podlasia i Mazowsza!</p>
-        <p>Alternatywnie do Łochowa można dojechać <strong>pociągiem</strong> z Warszawy i Białegostoku. Jeśli ktoś z Was będzie planował przyjazd pociągiem, prosimy dajcie nam odpowiednio wcześniej znać, żebyśmy mogli zorganizować odebranie Was ze stacji kolejowej w Łochowie.</p>
-        <p>Na teren kompleksu można także dopłynąć łodzią rzeką Liwiec, przylecieć śmigłowcem lub przyjechać konno... Jeśli komuś przyjdzie do głowy taki środek transportu, to zdecydowanie dajcie nam znać wcześniej! ;)</p>
-        <iframe class="map-responsive" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1838.571639771166!2d21.70131531559006!3d52.51749382903554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1spl!2spl!4v1763923606759!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="[translate:Mapa Pałacu i Folwarku Łochów]"></iframe>
-        <p><b>Jak trafić na parking:</b></p>
-        <ol>
-            <li>Dla tych którzy zdecydowali się na samochód - jak dojedziecie do <strong>zielonego baneru z nazwą Pałac i Folwark Łochów</strong> to prosto na pałac!</li>
-             <div class="section">
-            <img src="Parking 2.jpg" loading="lazy" alt="[translate:Mapa dojazdu do Pałacu i Folwarku Łochów]" class="map"/>
-        </div>
-        <li>Po przejechaniu <strong>głównej bramy</strong> kierujcie się <strong>od razu na lewo w stronę Wozowni</strong>.</li>
-        <div class="section">
-            <img src="Parking 1.jpg" loading="lazy" alt="[translate:Mapa dojazdu do Wozowni]" class="map"/>
-        </div>
-        <li>Parking znajduje się za budynkiem Wozowni. Po zaparkowaniu udajcie się do Recepcji w Budynku Wozowni, gdzie otrzymacie klucze do pokoju. Po zameldowaniu zapraszamy na spacer wokół dziedzińca pałacowego i kierujcie się w stronę zabytkowego Kościoła na godz. 15:45.</li>
-        <div class="section">
-            <img src="Parking 3.jpg" loading="lazy" alt="[translate:Parking za budynkiem Wozowni]" class="map"/>
-        </div>
-        </ol>
-        <div class="section" style="text-align:center; font-size:1.15em; margin-top:28px;">
-            Oczekujemy Was z radością!<br>
-            <strong>Ania & Andrzej</strong>
-        </div>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-    <h2 id="rsvp">RSVP</h2>
-    <p>Prosimy o potwierdzenie przybycia do 1 marca 2026 i informację, jeśli z jakichś względów nie będziecie chcieli skorzystać z noclegu, który zapewniamy dla wszystkich gości.</p>
-    <p style="font-size:0.97em; color:#5f4a29;">
-        Wypełniając formularz RSVP, nie miej obaw! Twoje odpowiedzi są bezpieczne i trafiają tylko do organizatorów! ;) 
-    </p>
-    <div class="gform-container">
-        <h3 style="color:#7a6337; text-align:center;">Formularz RSVP – Potwierdź obecność</h3>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOqnmovJ7cn8RKicXawlLwdFGOi1vYBEbRrcqSl6j_aOCK_Q/viewform?embedded=true" allowfullscreen title="Formularz RSVP"></iframe>
-    </div>
-    <div class="rsvp-extra">
-        <h3 style="color:#7a6337; margin-top:0;">Wskazówki dla gości</h3>
-        <ul style="padding-left:22px;">
-            <li>Pamiętajcie o wygodnych ubraniach na poprawiny i zabraniu dobrego humoru!</li>
-            <li>Jeśli macie nietypowe potrzeby dotyczące dojazdu lub specjalne życzenia, wpiszcie je w formularz RSVP – z przyjemnością pomożemy!</li>
-            <li>Zawsze możecie zadzwonić do organizatorów – numery są poniżej.</li>
-        </ul>
-    </div>
-    <div class="contact" id="kontakt">
-        <strong style="font-size:1.15em;">Numery kontaktowe:</strong><br>
-        <b>Tel. Ania:</b> <a href="tel:+48692377639">+48692377639</a><br>
-        <b>Tel. Andrzej:</b> <a href="tel:+48600019865">+48600019865</a><br>
-        <b>Tel. Recepcja:</b> <a href="tel:+48797339329">+48797339329</a><br>
-        <b>Tel. Menedżer wydarzenia (Marta):</b> <a href="tel:+48664787906">+48664787906</a><br>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-
-    <!-- NOWA sekcja: Wspólne zdjęcia Google/WhatsApp -->
-    <div class="gallery-section" id="zdjecia">
-        <h2>Wspólne zdjęcia z wesela!</h2>
-        <p>
-            Po uroczystości i podczas poprawin dzielcie się swoimi zdjęciami i filmikami!<br>
-            <a href="https://photos.app.goo.gl/rnL3cGxnpVRFFsXB6" target="_blank" class="btn">Album Google Photos – Wrzucaj w pełnej jakości</a><br>
-            <a href="https://chat.whatsapp.com/JnhPSGAt9d49hSMPFU6eST?mode=hqrt1" target="_blank" class="btn">Grupa WhatsApp – Szybkie zdjęcia, komentarze</a>
-        </p>
-        <p style="color:#777">
-            Album Google Photos jest idealny do archiwizacji zdjęć w oryginalnej jakości.<br>
-            Grupa WhatsApp służy do wymiany zdjęć, relacji i szybkich pytań.<br>
-            Korzystaj z obu opcji i dziel się radością – niech to będzie pamiątka dla całej rodziny!
-        </p>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-
-    <!-- Zabawna historia pałacu -->
-    <div class="section" id="hist-palac">
-        <h2>Historia Pałacu i Folwarku Łochów</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/J8pTJq9kXcg"
-                title="YouTube video player" allowfullscreen></iframe>
-        </div>
-        <p>
-          Dawno, dawno temu, pewien hrabia Józef Hornowski zapragnął domku marzeń. Nie chodziło o ciasne M4, ale neogotycki pałac z kolumnami! Tak oto w <span class="bold">1830 roku</span> powstał pierwowzór obecnego pałacu – z takim rozmachem, że nawet sąsiedzi z zamku popijali herbatkę na tarasie patrząc z zazdrością.
-        </p>
-        <p>
-          Potem przyszedł modny architekt Podczaszyński i wyczarował dwa piętrowe ryzality oraz portyk z kolumnami z żeliwa. Wnętrza wykończono zgodnie z modą na „dużo ozdób, mało minimalizmu”.
-        </p>
-        <p>
-          Pałac był niczym „Oxford dla arystokracji” – przewinęli się tu Hornowscy, Zamoyscy, Downarowiczowie i Kurnatowscy. W czasie rozkwitu za Zdzisława Zamoyskiego stajnia była pełna najlepszych rumaków na Mazowszu i Podlasiu, a przy poprawinach śmiano się z francuskich kolejek (kolej Paryż-Petersburg przejeżdżała praktycznie obok!).
-        </p>
-        <p>
-          Gdy „weselne czasy” minęły i pałac wpadł w ręce państwowe, z sal muzycznych zrobiono świetlicę, a z pieców kaflowych... skrytki na listy. Na szczęście nie wszystko zniknęło – stylowe parkiety i kilka zdobień ocalało!
-        </p>
-        <p>
-          A na leżankach poetycki cyprian Norwid bywał w gościach i szukał inspiracji do wierszy (mówią, że jedno powstało podczas podjadania pałacowego sernika).
-        </p>
-        <p>
-          W XXI wieku pojawiła się ekipa Arche S.A., która pod okiem Władysława Grochowskiego wymalowała pędzlem nową epokę. Pałac – odrestaurowany, odświeżony, na powrót pełen gości i tanecznych melodii. Dzisiaj – tak jak dawniej – jest idealnym miejscem na najlepszą zabawę w rodzinnej atmosferze!
-        </p>
-    </div>
-    <div class="section">
-        <img src="palac.jpg" loading="lazy" alt="[translate:Palac]" class="map"/>
-    </div>
-    <div class="section" id="hist-kosciol">
-        <h2>Historia Zabytkowego Kościoła</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/bDE66ejBJhU" title="YouTube video player" allowfullscreen></iframe>
-        </div>
-        <p>
-          Parafialne legendy mówią, że w <span class="bold">1932 roku</span> do Wólki Dobryńskiej dotarło marzenie: „trzeba nam kaplicy!” Pomysł podsunął ks. Michalik, ekipa cieśli rzuciła się do pracy, a architekt Mazur dostał swój „project of the year”. Budowa szła tak szybko, że ponoć nawet bociany pomagały – powstał trójnawowy, drewniany kościół z ołtarzem św. Stanisława Kostki.
-        </p>
-        <p>
-          Świątynię zdobiły nie tylko trzy ołtarze, ale i chór oraz prezbiterium, a Grzegorz Mincewicz cieszył się, że „jego dzieło” podziwiają goście i parafianie. Budowa trwała ledwie cztery miesiące – po czym biskup Michalik poświęcił obiekt, a w 1933 powstała tu parafia św. Stanisława.
-        </p>
-        <p>
-          Kościół wytrzymał 72 lata wesel, świąt i modlitw. Gdy nadszedł 2009 rok, drewniane ściany ruszyły w bajeczną podróż do Łochowa – na pałacowe tereny i w ręce konserwatorów. Tam kościółowi dano „drugą młodość” – a nawet nowe wezwanie Miłosierdzia Bożego!
-        </p>
-        <p>
-          Podczas rekonsekracji w maju 2010 roku biskup Antoni Dydycz, proboszczowie oraz goście świętowali nadanie nowego patrona, a tablica we wnętrzu przypomina o tym żywym kawałku historii.
-        </p>
-        <p>
-          Dziś kościół jest nie tylko miejscem modlitwy, ale i pamiątką niesamowitej podróży – od tętniącej życiem Wólki aż po magiczne tereny Łochowa!
-        </p>
-    </div>
-    <div class="section">
-        <img src="kosciol.jpg" loading="lazy" alt="[translate:Kosciol]" class="map"/>
-    </div>
-    <strong>P.S.</strong>
-    <p>Od pewnego Sztucznego Inteligenta dostaliśmy w prezencie grafomańską fraszkę. Jakkolwiek forma mogłaby być nieco lepsza, to z treścią nie umiemy się nie zgodzić...</p>
-    <p><div style="text-align: center;">
-        <i>"Kochani Goście, nie kombinujcie,<br>
-        Prezentów, kwiatów nie pakujcie!<br>
-        Wino i słodycze zostawcie w sklepie,<br>
-        Książki z dedykacją – te wpadną nam w serce!<br>
-        A jeśli się głowisz, co zrobić z kopertą,<br>
-        Wrzuć trochę złotówek – nie będzie nam przykro!<br>
-        Niech Was nie martwi wybór podarku,<br>
-        Książka lub koperta sprawią nam uśmiech bez żartu!"</i>
-    </div></p>
-    <div class="section">
-        <img src="prezent.jpg" loading="lazy" alt="[translate:Prezent weselny - książki lub koperta]" class="map"/>
-    </div>
-    <div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+<h1>Wesele Ani i Andrzeja</h1>
+<h2>INFORMATOR WESELNY</h2>
+<h3>4–5 lipca 2026, Pałac i Folwark Łochów</h3>
+<p>ul. Marii Konopnickiej 1 | Łochów <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank">Mapy Google</a></p>
+<div class="section"><img src="Folwark.jpg" loading="lazy" alt="Mapa Pałacu i Folwarku Łochów" class="map centered-img"/></div>
+<div class="menu-shortcuts">
+    <span>Przejdź do sekcji: </span>
+    <a href="#harmonogram">Harmonogram</a>
+    <a href="#noclegi">Noclegi</a>
+    <a href="#poprawiny">Niedziela poprawinowa</a>
+    <a href="#lokalizacja">Lokalizacja i dojazd</a>
+    <a href="#fraszka">Fraszka</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#kalendarz">Kalendarz Google</a>
+    <a href="#zdjecia">Wspólne zdjęcia</a>
+    <a href="#hist-palac">Historia Pałacu</a>
+    <a href="#hist-kosciol">Historia Kościoła</a>
+    <a href="#kontakt">Numery kontaktowe</a>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const phoneElements = document.querySelectorAll('.phone');
-    phoneElements.forEach(el => {
-        const encoded = el.getAttribute('data-phone');
-        if (encoded) {
-            const decoded = atob(encoded);
-            el.innerHTML = `<a href="tel:${decoded}">${decoded}</a>`;
-        }
-    });
-});
-</script>
+<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+
+<div class="section">
+<strong>Kochani!</strong>
+<p>Z wielką radością zapraszamy Was na uroczystość naszych zaślubin oraz przyjęcie weselne w niezwykłym otoczeniu <strong>Pałacu i Folwarku Łochów</strong>.</p>
+<p>Msza ślubna odbędzie się o godz. <strong>16:00</strong> w zabytkowym <strong>Kościele Miłosierdzia Bożego</strong> na terenie kompleksu pałacowego, zaś przyjęcie weselne odbędzie się w <strong>Kuchni Pałacowej i Oranżerii</strong>.</p>
+<p>Jeśli to możliwe, przyjedźcie do nas wcześniej, bowiem zarezerwowaliśmy dla każdego z Was <strong>pokój hotelowy</strong>, do którego <strong>zameldowanie</strong> będzie od godz. <strong>14:00 do 15:30 w Recepcji Wozowni</strong>.</p>
+<p>Poniżej znajdziecie najważniejsze informacje. Mamy nadzieję, że będziecie się bawić wspaniale (i na luziku!).</p>
+<p>Ściskamy mocno!<br><strong>Ania i Andrzej</strong></p>
+</div>
+<div class="section" id="harmonogram">
+<h2>Harmonogram</h2>
+<p>Przybliżony harmonogram wesela:</p>
+<ul>
+<li><b>Sobota, 4 lipca 2026:</b>
+    <ul>
+      <li>14:00–15:30 Zameldowanie w pokojach hotelowych <strong>- recepcja w Wozowni</strong></li>
+      <li>16:00 <strong>Ceremonia zaślubin</strong> w zabytkowym <strong>Kościele Miłosierdzia Bożego</strong> w Łochowie</li>
+      <li>16:45 Wspólne zdjęcie pod kościołem</li>
+      <li>17:00 Życzenia na <strong>Wyspie Pisarzy i Poetów</strong></li>
+      <li>18:00 Staropolskie powitanie i aperitif</li>
+      <li>18:30 Uroczysta kolacja w <strong>Kuchni Pałacowej</strong></li>
+      <li>20:00 Część taneczna w <strong>Oranżerii</strong></li>
+      <li>22:00 Serwis dania gorącego</li>
+    </ul>
+</li>
+<li><b>Niedziela, 5 lipca 2026:</b>
+    <ul>
+      <li>00:00 <strong>Tort weselny</strong></li>
+      <li>01:00 <strong>Oczepiny</strong></li>
+      <li>02:00 Zabawa do białego rana</li>
+      <li>04:00 <strong>Powitanie dnia z Parą Młodą nad Liwcem</strong></li>
+      <li>04:21 Wschód Słońca</li>
+      <li>05:00... ZZzzz... słodkie sny w pokojach hotelowych</li>
+      <li>09:00-11:00 <strong>Śniadanie poprawinowe</strong> w <strong>Restauracji Paśnik</strong></li>
+      <li>11:00 Piknik poprawinowy w Folwarku</li>
+      <li>14:00 Grill i ognisko w <strong>Wiacie nad Liwcem</strong></li>
+    </ul>
+</li>
+</ul>
+</div>
+<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+<div class="section" id="noclegi">
+<h2>Noclegi</h2>
+<ul>
+<li>Pokoje hotelowe znajdują się w <strong>Wozowni i Pałacu</strong></li>
+<li>Po zaparkowaniu samochodu udajcie się do <strong>recepcji hotelowej w budynku Wozowni</strong>, gdzie otrzymacie klucz do pokoju</li>
+<li>Każdy pokój jest z prywatną łazienką i ręcznikami</li>
+<li><strong>Zameldowanie</strong> w sobotę w godz. <strong>14:00-15:30</strong></li>
+<li><strong>Wymeldowanie</strong> w niedzielę do godz. <strong>10:00</strong></li>
+<li>Po wymeldowaniu zanieście swoje rzeczy do samochodów i kierujcie się na <strong>Śniadanie Poprawinowe</strong> do <strong>Restauracji Paśnik</strong>, które będzie serwowane w godz. <strong>9:00-11:00</strong>.</li>
+</ul>
+<div class="section">
+<img src="teren.jpg" loading="lazy" alt="Mapa terenu Pałacu i Folwarku Łochów" class="map centered-img"/>
+</div>
+</div>
+<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+<div class="section" id="poprawiny">
+<h2>Niedziela poprawinowa</h2>
+<ul>
+<li>Wszyscy goście w ramach pobytu mają dostęp do całego <strong>kompleksu Pałacu i Folwarku Łochów, w tym strefy SPA z basenem i saunami</strong> (przy recepcji obok restauracji Paśnik) oraz całego terenu obiektu, na którym znajdują się m.in. <strong>urokliwa rzeka Liwiec oraz mini zoo</strong> położone niedaleko restauracji Paśnik</li>
+<li>W godzinach <strong>9:00-11:00</strong> zapraszamy Was na serwowane w formie bufetu <strong>śniadanie poprawinowe</strong> w <strong>Restauracji Paśnik</strong></li>
+<li>Trzymając kciuki za dobrą pogodę, zapraszamy Was do spędzenia z nami niedzieli poprawinowej w formie <strong>pikniku nad rzeką Liwiec</strong> na terenie Folwarku</li>
+<li>O <strong>14:00</strong> odpalamy <strong>grilla i ognisko poprawinowe</strong> w <strong>Wiacie nad Liwcem</strong></li>
+<li>Warto zabrać ze sobą: wygodne letnie ubrania, strój kąpielowy, ręcznik, koc piknikowy, nakrycie głowy (kapelusz lub czapkę), okulary przeciwsłoneczne, krem z filtrem UV, SUPa, materac do wody, ręcznik do sauny (i... parasolkę, jeśli prognozy pogody będą kapryśne...)</li>
+</ul>
+</div>
+<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+<div class="section" id="lokalizacja">
+<h2>Lokalizacja i dojazd</h2>
+<div><b>Adres:</b> Pałac i Folwark Łochów, ul. Marii Konopnickiej 1, Łochów</div>
+<div><a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank">Mapy Google</a></div>
+<div><b>Parking:</b> Bezpłatny parking dla gości weselnych dostępny jest na terenie kompleksu z tyłu budynku Wozowni</div>
+<p><b>Jak dojechać?</b> Najwygodniej samochodem! Wrzućcie w nawigację adres: <strong>ul. Marii Konopnickiej 1, Łochów</strong> lub kliknijcie <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank">tutaj</a>, żeby przejść do mapy Google. Siadajcie wygodnie w fotelach, zapinajcie pasy i jedźcie ostrożnie! Pamiętajcie, że dojazd z Warszawy, Łomży czy Zambrowa zajmuje około 1h. Wyjedźcie odpowiednio wcześniej i cieszcie się widokiem za oknem pięknych terenów pogranicza Podlasia i Mazowsza!</p>
+<p>Alternatywnie do Łochowa można dojechać <strong>pociągiem</strong> z Warszawy i Białegostoku. Jeśli ktoś z Was będzie planował przyjazd pociągiem, prosimy dajcie nam odpowiednio wcześniej znać, żebyśmy mogli zorganizować odebranie Was ze stacji kolejowej w Łochowie.</p>
+<p>Na teren kompleksu można także dopłynąć łodzią rzeką Liwiec, przylecieć śmigłowcem lub przyjechać konno... Jeśli komuś przyjdzie do głowy taki środek transportu, to zdecydowanie dajcie nam znać wcześniej! ;)</p>
+<h3>Jak trafić na parking:</h3>
+<p>Dla tych którzy zdecydowali się na samochód - jak dojedziecie do <strong>zielonego baneru z nazwą Pałac i Folwark Łochów</strong> to prosto na pałac!</p>
+<img src="Parking 2.jpg" loading="lazy" alt="Mapa dojazdu do Pałacu i Folwarku Łochów" class="map centered-img"/>
+<p>Po przejechaniu <strong>głównej bramy</strong> kierujcie się <strong>od razu na lewo w stronę Wozowni</strong>.</p>
+<img src="Parking 1.jpg" loading="lazy" alt="Mapa dojazdu do Wozowni" class="map centered-img"/>
+<p>Parking znajduje się za budynkiem Wozowni. Po zaparkowaniu udajcie się do Recepcji w Budynku Wozowni, gdzie otrzymacie klucze do pokoju. Po zameldowaniu zapraszamy na spacer wokół dziedzińca pałacowego i kierujcie się w stronę zabytkowego Kościoła na godz. 15:45.</p>
+<img src="Parking 3.jpg" loading="lazy" alt="Parking za budynkiem Wozowni" class="map centered-img"/>
+<div class="section" style="text-align:center; font-size:1.15em; margin-top:28px;">
+Oczekujemy Was z radością!<br>
+<strong>Ania & Andrzej</strong>
+</div>
+</div>
+<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+<div class="gallery-section" id="fraszka">
+<h2>Fraszka</h2>
+<p>Od pewnego Sztucznego Inteligenta dostaliśmy w prezencie grafomańską fraszkę. Jakkolwiek forma mogłaby być nieco lepsza, to z treścią nie umiemy się nie zgodzić...
+<div style="text-align: center;">
+<i>"Kochani Goście, nie kombinujcie,<br>
+Prezentów, kwiatów nie pakujcie!<br>
+Wino i słodycze zostawcie w sklepie,<br>
+Książki z dedykacją – te wpadną nam w serce!<br>
+A jeśli się głowisz, co zrobić z kopertą,<br>
+Wrzuć trochę złotówek – nie będzie nam przykro!<br>
+Niech Was nie martwi wybór podarku,<br>
+Książka lub koperta sprawią nam uśmiech bez żartu!"</i>
+</div>
+</p>
+<div class="section">
+<img src="prezent.jpg" loading="lazy" alt="Prezent weselny - książki lub koperta" class="map centered-img"/>
+</div>
+</div>
+<h2 id="rsvp">RSVP</h2>
+<p>Prosimy o potwierdzenie przybycia do 1 kwietnia 2026 i informację, jeśli z jakichś względów nie będziecie chcieli skorzystać z noclegu, który zapewniamy dla wszystkich gości.</p>
+<p style="font-size:0.97em; color:#5f4a29;">
+Wypełniając formularz RSVP, Twoje odpowiedzi są bezpieczne i trafiają tylko do organizatorów. Dane nie są publiczne.
+</p>
+<div class="gform-container">
+<h3 style="color:#7a6337; text-align:center;">Formularz RSVP – Potwierdź obecność</h3>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOqnmovJ7cn8RKicXawlLwdFGOi1vYBEbRrcqSl6j_aOCK_Q/viewform?embedded=true" allowfullscreen title="Formularz RSVP"></iframe>
+</div>
+<div class="add-calendar-section" id="kalendarz">
+<h2>Dodaj wydarzenie do kalendarza Google!</h2>
+<p>
+Dodaj nasze wesele do swojego kalendarza Google jednym kliknięciem.<br>
+<strong>Jeżeli otwierasz na telefonie, użyj opcji otwarcia w nowej karcie/przeglądarce – aplikacje (Messenger, Gmail itp.) mogą nie obsługiwać dodawania wydarzeń.</strong>
+</p>
+<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wesele+Ani+i+Andrzeja&dates=20260704T140000Z/20260705T140000Z&location=Pałac+i+Folwark+Łochów,+ul.+Marii+Konopnickiej+1,+Łochów&details=Zaślubiny+i+wesele+Ani+i+Andrzeja,+4-5+lipca+2026,+Pałac+i+Folwark+Łochów.+Msza+ślubna+o+godz.+16:00+w+Kościele+Miłosierdzia+Bożego+na+terenie+pałacu.+Noclegi+zapewnione+w+hotelowych+apartamentach,+zameldowanie+w+Recepcji+Wozowni+od+14:30+do+15:00,+parking+za+Wozownią.+Śniadanie+poprawinowe+9:00-11:00.+Mapka:+https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank" class="btn">Dodaj do kalendarza Google</a>
+</div>
+<div class="gallery-section" id="zdjecia">
+<h2>Wspólne zdjęcia z wesela!</h2>
+<p>
+Po uroczystości i podczas poprawin dzielcie się swoimi zdjęciami i filmikami!<br>
+<a href="https://photos.app.goo.gl/rnL3cGxnpVRFFsXB6" target="_blank" class="btn">Album Google Photos – Wrzucaj w pełnej jakości</a>
+<a href="https://chat.whatsapp.com/JnhPSGAt9d49hSMPFU6eST?mode=hqrt1" target="_blank" class="btn">Grupa WhatsApp – Szybkie zdjęcia i komentarze</a>
+</p>
+<p style="color:#777">
+Album Google Photos jest idealny do archiwizacji zdjęć w oryginalnej jakości.<br>
+Grupa WhatsApp służy do wymiany zdjęć, relacji i szybkich pytań!
+</p>
+</div>
+<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+<div class="section" id="hist-palac">
+<h2>Historia Pałacu i Folwarku Łochów</h2>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/J8pTJq9kXcg" title="YouTube video player" allowfullscreen></iframe>
+</div>
+<p>
+<span class="bold">Dawno, dawno temu</span>, pewien <span class="bold">hrabia Józef Hornowski</span> zapragnął domku marzeń. Nie chodziło o ciasne <span class="bold">M4</span>, ale <span class="bold">pałac z kolumnami</span>! Tak oto w <span class="bold">1830 roku</span> powstał pierwowzór obecnego pałacu – z takim rozmachem, że nawet sąsiedzi z innych dworów oglądali go z zazdrością.
+Potem przyszedł modny <span class="bold">architekt Podczaszyński</span> i wyczarował dwa piętrowe <span class="bold">ryzality</span> oraz <span class="bold">portyk z kolumnami z żeliwa</span>. Wnętrza wykończono zgodnie z modą na „dużo ozdób, mało minimalizmu”.
+Pałac był niczym <span class="bold">„Oxford dla arystokracji”</span> – przewinęli się tu <span class="bold">Hornowscy</span>, <span class="bold">Zamoyscy</span>, <span class="bold">Downarowiczowie</span> i <span class="bold">Kurnatowscy</span>. W czasie rozkwitu za <span class="bold">Zdzisława Zamoyskiego</span> stajnia była pełna najlepszych rumaków na Mazowszu i Podlasiu, a przy poprawinach śmiano się z francuskich kolejek (<span class="bold">kolej Paryż-Petersburg</span> przejeżdżała praktycznie obok!).
+Gdy <span class="bold">„weselne czasy” minęły</span> i pałac wpadł w ręce państwowe, z sal muzycznych zrobiono <span class="bold">świetlicę</span>, a z <span class="bold">pieców kaflowych... skrytki na listy</span>. Na szczęście nie wszystko zniknęło – <span class="bold">stylowe parkiety</span> i kilka zdobień ocalało!
+A na leżankach poetycki <span class="bold">cyprian Norwid</span> bywał w gościach i szukał inspiracji do wierszy, no bo przecież nie grafomańskich fraszek... (mówią, że jeden wiersz powstał podczas podjadania pałacowego sernika...).
+W <span class="bold">XXI wieku</span> pojawiła się ekipa <span class="bold">Arche S.A.</span>, która pod okiem <span class="bold">Władysława Grochowskiego</span> wymalowała pędzlem nową epokę. Pałac – odrestaurowany, odświeżony, na powrót pełen gości i tanecznych melodii. <span class="bold">Dzisiaj – tak jak dawniej – jest idealnym miejscem na najlepszą zabawę w rodzinnej atmosferze!</span>
+</p>
+</div>
+<div class="section">
+<img src="palac.jpg" loading="lazy" alt="Pałac" class="map centered-img"/>
+</div>
+<div class="section" id="hist-kosciol">
+<h2>Historia Zabytkowego Kościoła</h2>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/bDE66ejBJhU" title="YouTube video player" allowfullscreen></iframe>
+</div>
+<p><span class="bold">Parafialne legendy</span> mówią, że w <span class="bold">1932 roku</span> do <span class="bold">Wólki Dobryńskiej</span> dotarło marzenie: „trzeba nam kaplicy!” Pomysł podsunął <span class="bold">ks. Michalik</span>, ekipa cieśli rzuciła się do pracy, a <span class="bold">architekt Mazur</span> dostał swój „project of the year”. Budowa szła tak szybko, że ponoć nawet <span class="bold">bociany pomagały</span> – powstał <span class="bold">trójnawowy, drewniany kościół</span> z ołtarzem <span class="bold">św. Stanisława Kostki</span>.
+Świątynię zdobiły nie tylko <span class="bold">trzy ołtarze</span>, ale i <span class="bold">chór oraz prezbiterium</span>, a <span class="bold">Grzegorz Mincewicz</span> cieszył się, że „jego dzieło” podziwiają goście i parafianie. Budowa trwała ledwie <span class="bold">cztery miesiące</span> – po czym <span class="bold">biskup Michalik</span> poświęcił obiekt, a w <span class="bold">1933</span> powstała tu parafia <span class="bold">św. Stanisława</span>.
+Kościół wytrzymał <span class="bold">72 lata</span> wesel, świąt i modlitw. Gdy nadszedł <span class="bold">2009 rok</span>, drewniane ściany ruszyły w bajeczną podróż do Łochowa – na pałacowe tereny i w ręce konserwatorów. Tam kościółowi dano „drugą młodość” – a nawet <span class="bold">nowe wezwanie Miłosierdzia Bożego</span>!
+Podczas rekonsekracji w <span class="bold">maju 2010 roku</span> biskup <span class="bold">Antoni Dydycz</span>, proboszczowie oraz goście świętowali nadanie nowego patrona, a <span class="bold">tablica we wnętrzu</span> przypomina o tym żywym kawałku historii.
+Dziś kościół jest nie tylko miejscem modlitwy, ale i pamiątką niesamowitej podróży – od <span class="bold">tętniącej życiem Wólki</span> aż po <span class="bold">magiczne tereny Łochowa</span>!
+</p>
+</div>
+<div class="section">
+<img src="kosciol.jpg" loading="lazy" alt="Kościół" class="map centered-img"/>
+</div>
+<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
+<div class="contact" id="kontakt">
+<strong>Numery kontaktowe:</strong><br>
+<b>Tel. Ania:</b> <a href="tel:+48692377639">+48692377639</a><br>
+<b>Tel. Andrzej:</b> <a href="tel:+48600019865">+48600019865</a><br>
+<b>Tel. Recepcja:</b> <a href="tel:+48797339329">+48797339329</a><br>
+<b>Tel. Koordynator przyjęcia (Klaudia):</b> <a href="tel:+48530423929">+48530423929</a><br>
+<b>Tel. Menedżer wydarzenia (Marta):</b> <a href="tel:+48664787906">+48664787906</a><br>
+</div>
+</div>
 </body>
 </html>
