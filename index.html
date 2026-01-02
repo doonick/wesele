@@ -4,248 +4,1035 @@
 <meta charset="UTF-8">
 <title>Wesele Ani i Andrzeja – Pałac i Folwark Łochów</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
-body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:#faf8f6; color:#353535;}
-.container { max-width:600px; margin:auto; padding:16px; }
-img { max-width:100%; height:auto; border-radius:12px; margin-bottom:16px;}
-.centered-img { display: block; margin: 16px auto;}
-h1, h2 { color:#7a6337; margin-top:18px; margin-bottom:8px; text-align:center;}
-.section h2, .section h3, .gallery-section h2, .add-calendar-section h2, .gallery-section h3, .add-calendar-section h3 { text-align:center;}
-.section h3, .gallery-section h3 { margin-top:15px;}
-.section { margin-bottom:24px;}
-.map { box-shadow: 0 4px 12px rgba(60,60,60,.15); border:1px solid #eee;}
-ul { padding-left:18px; margin-top: 0; }
-ul li { margin-bottom: 10px; }
-p { margin-bottom: 16px; }
-.bold { font-weight:bold; color:#222;}
-.video-container { width: 95%; max-width: 420px; margin: 0 auto 18px auto; background: #eee; border-radius:12px; overflow:hidden;}
-.video-container iframe { width:100%; height:225px; max-width:420px; border:0; display:block; }
-@media (min-width: 601px) { .video-container { max-width: 560px; } .video-container iframe { height:315px; max-width:560px; } }
-a.btn { display:inline-block; background:#7a6337; color:#fff; text-decoration:none; padding:10px 20px; border-radius:8px; font-size:1.1em; margin:8px 4px; transition: background-color 0.3s ease;}
-a.btn:hover { background:#5f4a29; }
-.menu-shortcuts { margin: 0 0 20px 0; padding:14px 8px; background:#f9f4ee; border-radius:8px; font-size:1em; text-align:center;}
-.menu-shortcuts a { color:#7a6337; text-decoration:underline; margin: 0 10px 10px 0; display:inline-block; font-weight:bold;}
-.menu-shortcuts a:hover { color:#5f4a29; text-decoration:none;}
-.backtotop { text-align:center; margin:24px 0;}
-.backtotop a { color:#5f4a29; text-decoration:underline; font-size:1em; font-weight: bold;}
-iframe.map-responsive { width: 100%; max-width: 600px; height: 450px; border: 0; border-radius: 12px; box-shadow: 0 4px 12px rgba(60,60,60,.15);}
-.gform-container { width: 95%; max-width: 520px; margin: 0 auto 36px auto; background: #fff7ed; border-radius: 12px; box-shadow: 0 2px 10px rgba(120,110,80,.09); padding: 20px 0 28px 0;}
-.gform-container iframe { width: 100%; min-height: 950px; max-width: 520px; border: 0; display: block; border-radius: 8px;}
-.gallery-section, .add-calendar-section { background: #f9f4ee; border-radius: 12px; padding:18px 12px; max-width: 520px; margin: 0 auto 32px auto; box-shadow: 0 2px 10px rgba(60,60,60,.09); text-align: center;}
-.gallery-section h2, .add-calendar-section h2 { color:#7a6337; font-size:1.25em; margin-top:4px; margin-bottom:12px;}
-.gallery-section p, .add-calendar-section p { font-size:1em; color:#555; text-align:center; }
-.contact { background:#f0ece8; border-radius:8px; padding:10px; margin:36px auto 0 auto; max-width:500px;}
+/* --- BAZA --- */
+html { 
+    scroll-behavior: smooth; 
+    scroll-padding-top: 200px; /* Większy offset na menu */
+}
+body { 
+    font-family: 'Lato', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #fdfbf7;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4c5b0' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: #4a4a4a; 
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 { 
+    font-family: 'Playfair Display', serif; 
+    color: #8c734b; 
+    text-align: center; 
+}
+
+h1 { font-size: 2.2em; margin-bottom: 0.2em; color: #5f4a29; margin-top: 10px;}
+h2 { font-size: 1.8em; margin-top: 0; position: relative; padding-bottom: 20px; margin-bottom: 25px;}
+
+h2::after {
+    content: "✦";
+    display: block;
+    font-size: 18px;
+    color: #d4c5b0;
+    margin-top: 10px;
+    line-height: 1;
+}
+h3 { font-size: 1.4em; margin-bottom: 15px; color: #7a6337; margin-top: 5px; }
+
+p { margin-bottom: 18px; font-size: 1.05em; }
+ul { padding-left: 20px; }
+li { margin-bottom: 12px; }
+a { color: #8c734b; text-decoration: none; transition: 0.3s; font-weight: 600; }
+a:hover { color: #5f4a29; }
+.bold { font-weight: 700; color: #2e2e2e; }
+
+.icon-gold { color: #b08d55; margin-right: 8px; }
+
+/* --- UKŁAD --- */
+.container { 
+    max-width: 800px; 
+    margin: auto; 
+    padding: 20px; 
+    padding-top: 180px; 
+}
+
+/* --- KARTY --- */
+.section-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 45px;
+    box-shadow: 0 10px 40px rgba(139, 116, 75, 0.1);
+    border: 1px solid rgba(212, 197, 176, 0.3);
+    opacity: 0; 
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.section-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- NAWIGACJA --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    z-index: 1000;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #eaddcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    max-width: 950px;
+}
+.navbar a {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5f4a29;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.navbar a i {
+    color: #b08d55; 
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+.navbar a:hover { 
+    background-color: #f4f1ea; 
+    color: #8c734b; 
+}
+
+/* --- JĘZYKI --- */
+.lang-switcher {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.lang-btn {
+    border: 1px solid #d4c5b0;
+    background: transparent;
+    border-radius: 20px;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #8c734b;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+.lang-btn.active {
+    background: #8c734b;
+    color: #fff;
+    border-color: #8c734b;
+    box-shadow: 0 2px 8px rgba(140, 115, 75, 0.3);
+}
+.lang-btn:hover { background: #efe6da; }
+
+/* --- LICZNIK --- */
+#countdown-box {
+    background: linear-gradient(135deg, #8c734b 0%, #a68b5e 100%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 25px auto;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(122, 99, 55, 0.25);
+    max-width: 500px;
+}
+#countdown-timer {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.countdown-label {
+    font-size: 0.8em;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* --- ZWIJANIE --- */
+details > summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    color: #8c734b;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eaddcf;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #fdfbf9;
+    transition: 0.3s;
+}
+details > summary:hover { 
+    background-color: #fff; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+details[open] > summary { display: none; }
+details > summary::-webkit-details-marker { display: none; } 
+
+/* --- ZDJĘCIA --- */
+img { max-width: 100%; height: auto; border-radius: 4px; }
+.centered-img { 
+    display: block; 
+    margin: 25px auto; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    border: 5px solid #fff; 
+    transition: transform 0.3s ease; 
+}
+.centered-img:hover { transform: scale(1.01); }
+
+/* --- PODCAST PLAYER --- */
+audio {
+    width: 100%; 
+    max-width: 500px; 
+    margin-top: 15px; 
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* --- TIMELINE --- */
+.timeline ul { list-style: none; padding: 0; }
+.timeline > ul > li { margin-bottom: 40px; }
+.timeline-day { 
+    font-size: 1.5em; 
+    color: #5f4a29; 
+    font-family: 'Playfair Display', serif; 
+    border-bottom: 2px solid #eaddcf; 
+    padding-bottom: 10px; 
+    margin-bottom: 25px; 
+    display: block;
+    text-align: center;
+}
+.timeline-events { list-style: none; padding-left: 20px; border-left: 2px solid #eaddcf; margin-left: 10px; }
+.timeline-events li { position: relative; padding-left: 25px; margin-bottom: 20px; }
+.timeline-events li::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #8c734b;
+    position: absolute;
+    left: -27px;
+    top: 8px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 1px #eaddcf;
+}
+
+/* --- PRZYCISKI --- */
+a.btn { 
+    display: inline-block; 
+    background: linear-gradient(135deg, #8c734b 0%, #7a6337 100%);
+    color: #fff; 
+    padding: 14px 30px; 
+    border-radius: 50px; 
+    font-size: 0.95em; 
+    font-weight: bold;
+    margin: 10px 5px; 
+    box-shadow: 0 6px 20px rgba(122, 99, 55, 0.25);
+    text-decoration: none;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a.btn.spotify {
+    background: linear-gradient(135deg, #1DB954 0%, #1aa34a 100%); 
+    box-shadow: 0 6px 20px rgba(29, 185, 84, 0.25);
+}
+a.btn:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(122, 99, 55, 0.35);
+    color: #fff;
+}
+.desc-text {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* --- WIDEO --- */
+.video-container { 
+    position: relative; padding-bottom: 56.25%; height: 0; 
+    overflow: hidden; border-radius: 12px; background: #000;
+    margin-bottom: 25px; margin-top: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.gform-container { width: 100%; margin: 0 auto; }
+.gform-container iframe { width: 100%; min-height: 950px; border: 0; display: block; border-radius: 8px; }
+
+/* Ukrywanie klas językowych */
+.lang-content { display: none; }
+.lang-content.active { display: block; }
+span.lang-content.active { display: inline; }
+
+/* --- RESPANSYWNOŚĆ --- */
 @media (max-width: 600px) {
-    .container { padding:8px; }
-    h1 { font-size:1.6em; }
-    h2 { font-size:1.2em; }
-    .gform-container { padding:12px 0 20px 0;}
-    .contact { padding:8px; }
-    .gallery-section, .add-calendar-section{padding:10px 2px;}
-    .menu-shortcuts { font-size:0.97em; }
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    .container { padding: 15px; padding-top: 210px; } 
+    html { scroll-padding-top: 220px; }
+    .section-card { padding: 25px 15px; }
+    .navbar { padding: 10px 2px; }
+    .navbar-links a { font-size: 0.65em; padding: 5px 6px; margin: 1px; }
+    #countdown-timer { font-size: 1.3em; } 
+    .lang-switcher { gap: 15px; }
+    .lang-btn { font-size: 0.85em; padding: 5px 15px; }
 }
 </style>
 </head>
 <body>
 <a name="top"></a>
-<div class="container">
-<h1>Wesele Ani i Andrzeja</h1>
-<h2>INFORMATOR WESELNY</h2>
-<h3 style="text-align:center;">4–5 lipca 2026, Pałac i Folwark Łochów</h3>
-<p style="text-align:center;">ul. Marii Konopnickiej 1 | Łochów <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank">Mapy Google</a></p>
-<div class="section"><img src="Folwark.jpg" loading="lazy" alt="Mapa Pałacu i Folwarku Łochów" class="map centered-img"/></div>
-<div class="menu-shortcuts">
-    <span>Przejdź do sekcji: </span>
-    <a href="#harmonogram">Harmonogram</a>
-    <a href="#noclegi">Noclegi</a>
-    <a href="#poprawiny">Niedziela poprawinowa</a>
-    <a href="#lokalizacja">Lokalizacja i dojazd</a>
-    <a href="#fraszka">Fraszka</a>
-    <a href="#rsvp">RSVP</a>
-    <a href="#kalendarz">Kalendarz Google</a>
-    <a href="#zdjecia">Wspólne zdjęcia</a>
-    <a href="#hist-palac">Historia Pałacu</a>
-    <a href="#hist-kosciol">Historia Kościoła</a>
-    <a href="#kontakt">Numery kontaktowe</a>
-</div>
-<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
 
-<div class="section">
-<strong>Kochani!</strong>
-<p>Z wielką radością zapraszamy Was na uroczystość naszych zaślubin oraz przyjęcie weselne w niezwykłym otoczeniu <strong>Pałacu i Folwarku Łochów</strong>.</p>
-<p>Msza ślubna odbędzie się o godz. <strong>16:00</strong> w zabytkowym <strong>Kościele Miłosierdzia Bożego</strong> na terenie kompleksu pałacowego, zaś przyjęcie weselne odbędzie się w <strong>Kuchni Pałacowej i Oranżerii</strong>.</p>
-<p>Jeśli to możliwe, przyjedźcie do nas wcześniej, bowiem zarezerwowaliśmy dla każdego z Was <strong>pokój hotelowy</strong>, do którego <strong>zameldowanie</strong> będzie od godz. <strong>14:00 do 15:30 w Recepcji Wozowni</strong>.</p>
-<p>Poniżej znajdziecie najważniejsze informacje. Mamy nadzieję, że będziecie się bawić wspaniale (i na luziku!).</p>
-<p>Ściskamy mocno!<br><strong>Ania i Andrzej</strong></p>
+<div class="navbar">
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLanguage('pl')">PL</button>
+        <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="setLanguage('no')">NO</button>
+    </div>
+    <div class="navbar-links">
+        <a href="#podcast">
+            <i class="fa-solid fa-headphones"></i>
+            <span class="lang-content pl active">Podcast</span>
+            <span class="lang-content en">Podcast</span>
+            <span class="lang-content no">Podkast</span>
+        </a>
+        <a href="#harmonogram">
+            <i class="fa-regular fa-clock"></i>
+            <span class="lang-content pl active">Harmonogram</span>
+            <span class="lang-content en">Schedule</span>
+            <span class="lang-content no">Tidsplan</span>
+        </a>
+        <a href="#noclegi">
+            <i class="fa-solid fa-bed"></i>
+            <span class="lang-content pl active">Noclegi</span>
+            <span class="lang-content en">Hotel</span>
+            <span class="lang-content no">Overnatting</span>
+        </a>
+        <a href="#poprawiny">
+            <i class="fa-solid fa-sun"></i>
+            <span class="lang-content pl active">Poprawiny</span>
+            <span class="lang-content en">Sunday</span>
+            <span class="lang-content no">Søndag</span>
+        </a>
+        <a href="#lokalizacja" id="nav-lokalizacja">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span class="lang-content pl active">Dojazd</span>
+            <span class="lang-content en">Location</span>
+            <span class="lang-content no">Beliggenhet</span>
+        </a>
+        <a href="#fraszka" id="nav-fraszka">
+            <i class="fa-solid fa-gift"></i>
+            <span class="lang-content pl active">Prezenty</span>
+            <span class="lang-content en">Gifts</span>
+            <span class="lang-content no">Gaver</span>
+        </a>
+        <a href="#rsvp" id="nav-rsvp">
+            <i class="fa-regular fa-envelope"></i> RSVP
+        </a>
+        <a href="#zdjecia">
+            <i class="fa-solid fa-camera"></i>
+            <span class="lang-content pl active">Zdjęcia</span>
+            <span class="lang-content en">Photos</span>
+            <span class="lang-content no">Bilder</span>
+        </a>
+        <a href="#muzyka">
+            <i class="fa-solid fa-music"></i>
+            <span class="lang-content pl active">Muzyka</span>
+            <span class="lang-content en">Music</span>
+            <span class="lang-content no">Musikk</span>
+        </a>
+        <a href="#hist-palac">
+            <i class="fa-solid fa-landmark"></i>
+            <span class="lang-content pl active">Historia</span>
+            <span class="lang-content en">History</span>
+            <span class="lang-content no">Historie</span>
+        </a>
+        <a href="#kontakt">
+            <i class="fa-solid fa-address-book"></i>
+            <span class="lang-content pl active">Kontakt</span>
+            <span class="lang-content en">Contact</span>
+            <span class="lang-content no">Kontakt</span>
+        </a>
+    </div>
 </div>
-<div class="section" id="harmonogram">
-<h2>Harmonogram</h2>
-<p>Przybliżony harmonogram wesela:</p>
-<ul>
-<li><b>Sobota, 4 lipca 2026:</b>
-    <ul>
-      <li>14:00–15:30 Zameldowanie w pokojach hotelowych <strong>- recepcja w Wozowni</strong></li>
-      <li>16:00 <strong>Ceremonia zaślubin</strong> w zabytkowym <strong>Kościele Miłosierdzia Bożego</strong> w Łochowie</li>
-      <li>16:45 Wspólne zdjęcie pod kościołem</li>
-      <li>17:00 Życzenia na <strong>Wyspie Pisarzy i Poetów</strong></li>
-      <li>18:00 Staropolskie powitanie i aperitif</li>
-      <li>18:30 Uroczysta kolacja w <strong>Kuchni Pałacowej</strong></li>
-      <li>20:00 Część taneczna w <strong>Oranżerii</strong></li>
-      <li>22:00 Serwis dania gorącego</li>
-    </ul>
-</li>
-<li><b>Niedziela, 5 lipca 2026:</b>
-    <ul>
-      <li>00:00 <strong>Tort weselny</strong></li>
-      <li>01:00 <strong>Oczepiny</strong></li>
-      <li>02:00 Zabawa do białego rana</li>
-      <li>04:00 <strong>Powitanie dnia z Parą Młodą nad Liwcem</strong></li>
-      <li>04:21 Wschód Słońca</li>
-      <li>05:00... ZZzzz... słodkie sny w pokojach hotelowych</li>
-      <li>09:00-11:00 <strong>Śniadanie poprawinowe</strong> w <strong>Restauracji Paśnik</strong></li>
-      <li>11:00 Piknik poprawinowy w Folwarku</li>
-      <li>14:00 Grill i ognisko w <strong>Wiacie nad Liwcem</strong></li>
-    </ul>
-</li>
-</ul>
+
+<div class="container">
+    
+    <div class="section-card visible" style="text-align: center; border-top: 5px solid #8c734b;">
+        <h1>
+            <span class="lang-content pl active">Wesele Ani i Andrzeja</span>
+            <span class="lang-content en">Ania & Andrzej's Wedding</span>
+            <span class="lang-content no">Ania & Andrzej Bryllup</span>
+        </h1>
+        <h2 style="font-size: 1.2em; color: #7a6337; margin-bottom: 10px; border:none; text-transform:uppercase; letter-spacing:2px;">
+            <span class="lang-content pl active">Informator Weselny</span>
+            <span class="lang-content en">Wedding Guide</span>
+            <span class="lang-content no">Bryllupsguide</span>
+        </h2>
+        
+        <h3 style="text-align:center; margin-top:0;">
+            <i class="fa-regular fa-calendar icon-gold"></i>
+            4–5 <span class="lang-content pl active">lipca</span><span class="lang-content en">July</span><span class="lang-content no">juli</span> 2026
+        </h3>
+        <p style="text-align:center; font-size: 0.9em;">
+            <i class="fa-solid fa-location-dot icon-gold"></i> Pałac i Folwark Łochów<br>
+            ul. Marii Konopnickiej 1 | <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank">Google Maps</a>
+        </p>
+        
+        <div id="countdown-box">
+            <div class="countdown-label">
+                <i class="fa-solid fa-hourglass-start"></i> 
+                <span class="lang-content pl active">Do wesela pozostało:</span>
+                <span class="lang-content en">Countdown to the Big Day:</span>
+                <span class="lang-content no">Nedtelling til den store dagen:</span>
+            </div>
+            <div id="countdown-timer">...</div>
+        </div>
+
+        <img src="Folwark.jpg" loading="lazy" alt="Mapa Pałacu i Folwarku Łochów" class="map centered-img"/>
+        
+        <div style="text-align: left; margin-top: 30px;">
+            <p style="text-align: center; font-family: 'Playfair Display', serif; font-size: 1.4em; color: #8c734b;">
+                <span class="lang-content pl active">Kochani!</span>
+                <span class="lang-content en">Dear Guests!</span>
+                <span class="lang-content no">Kjære gjester!</span>
+            </p>
+            
+            <div class="lang-content pl active">
+                <p>Z wielką radością zapraszamy Was na uroczystość naszych zaślubin oraz przyjęcie weselne w niezwykłym otoczeniu <strong>Pałacu i Folwarku Łochów</strong>.</p>
+                <p>Msza ślubna odbędzie się o godz. <strong>16:00</strong> w zabytkowym <strong>Kościele Miłosierdzia Bożego</strong> na terenie kompleksu pałacowego, zaś przyjęcie weselne odbędzie się w <strong>Kuchni Pałacowej i Oranżerii</strong>.</p>
+                <p>Jeśli to możliwe, przyjedźcie do nas wcześniej, bowiem zarezerwowaliśmy dla każdego z Was <strong>pokój hotelowy</strong>, do którego <strong>zameldowanie</strong> będzie od godz. <strong>14:00 do 15:30 w Recepcji Wozowni</strong>.</p>
+                <p>Poniżej znajdziecie najważniejsze informacje. Mamy nadzieję, że będziecie się bawić wspaniale (i na luziku!).</p>
+                <p style="text-align:center;">Ściskamy mocno!<br><strong>Ania i Andrzej</strong></p>
+            </div>
+            
+            <div class="lang-content en">
+                <p>We are overjoyed to invite you to our wedding ceremony and reception in the extraordinary setting of <strong>Pałac i Folwark Łochów</strong>.</p>
+                <p>The wedding mass will take place at <strong>16:00</strong> in the historic <strong>Church of Divine Mercy</strong> located on the palace grounds, followed by the wedding reception in the <strong>Palace Kitchen and Orangery</strong>.</p>
+                <p>If possible, please arrive early, as we have booked a <strong>hotel room</strong> for each of you. <strong>Check-in</strong> will be available from <strong>14:00 to 15:30 at the Wozownia Reception</strong>.</p>
+                <p>Below you will find the most important information. We hope you will have a wonderful time!</p>
+                <p style="text-align:center;">Lots of love!<br><strong>Ania & Andrzej</strong></p>
+            </div>
+
+            <div class="lang-content no">
+                <p>Vi er overlykkelige over å kunne invitere dere til vår vielse og bryllupsfest i de fantastiske omgivelsene til <strong>Pałac i Folwark Łochów</strong>.</p>
+                <p>Vielsen finner sted kl. <strong>16:00</strong> i den historiske <strong>Guddommelig Barmhjertighets kirke</strong> på slottsområdet, etterfulgt av bryllupsfest i <strong>Palasskjøkkenet og Oransjeriet</strong>.</p>
+                <p>Hvis mulig, vennligst kom tidlig, da vi har bestilt et <strong>hotellrom</strong> til hver av dere. <strong>Innsjekking</strong> er tilgjengelig fra <strong>14:00 til 15:30 i Wozownia-resepsjonen</strong>.</p>
+                <p>Nedenfor finner dere den viktigste informasjonen. Vi håper dere får en fantastisk tid!</p>
+                <p style="text-align:center;">Klemmer!<br><strong>Ania & Andrzej</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card" id="podcast">
+        <h2>
+            <i class="fa-solid fa-podcast icon-gold"></i>
+            <span class="lang-content pl active">Podcast Weselny</span>
+            <span class="lang-content en">Wedding Podcast</span>
+            <span class="lang-content no">Bryllupspodkast</span>
+        </h2>
+        
+        <div style="text-align: center;">
+            <p class="lang-content pl active" style="font-style:italic;">Nie chce Ci się czytać wszystkiego? Posłuchaj krótkiej rozmowy wygenerowanej przez AI, która podsumowuje najważniejsze szczegóły!</p>
+            <p class="lang-content en" style="font-style:italic;">Don't feel like reading everything? Listen to a short AI-generated conversation summarizing the key details!</p>
+            <p class="lang-content no" style="font-style:italic;">Orker du ikke å lese alt? Lytt til en kort AI-generert samtale som oppsummerer nøkkeldetaljene!</p>
+            
+            <audio controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <div class="section-card" id="harmonogram">
+        <h2>
+            <i class="fa-regular fa-clock icon-gold"></i>
+            <span class="lang-content pl active">Harmonogram</span>
+            <span class="lang-content en">Schedule</span>
+            <span class="lang-content no">Tidsplan</span>
+        </h2>
+        <div class="timeline">
+            <ul>
+                <li>
+                    <span class="timeline-day">
+                        <span class="lang-content pl active">Sobota, 4 lipca 2026</span>
+                        <span class="lang-content en">Saturday, July 4th, 2026</span>
+                        <span class="lang-content no">Lørdag 4. juli 2026</span>
+                    </span>
+                    <ul class="timeline-events">
+                        <div class="lang-content pl active">
+                            <li>14:00–15:30 <i class="fa-solid fa-key icon-gold"></i> Zameldowanie w pokojach (Recepcja w Wozowni)</li>
+                            <li>16:00 <i class="fa-solid fa-church icon-gold"></i> <strong>Ceremonia zaślubin</strong> (Kościół na terenie Pałacu)</li>
+                            <li>16:45 <i class="fa-solid fa-camera icon-gold"></i> Wspólne zdjęcie pod kościołem</li>
+                            <li>17:00 <i class="fa-regular fa-heart icon-gold"></i> Życzenia na <strong>Wyspie Pisarzy i Poetów</strong></li>
+                            <li>18:00 <i class="fa-solid fa-champagne-glasses icon-gold"></i> Staropolskie powitanie i aperitif</li>
+                            <li>18:30 <i class="fa-solid fa-utensils icon-gold"></i> Uroczysta kolacja w <strong>Kuchni Pałacowej</strong></li>
+                            <li>20:00 <i class="fa-solid fa-music icon-gold"></i> Część taneczna w <strong>Oranżerii</strong></li>
+                            <li>22:00 Serwis dania gorącego</li>
+                        </div>
+                        
+                        <div class="lang-content en">
+                            <li>14:00–15:30 <i class="fa-solid fa-key icon-gold"></i> Hotel Check-in (Wozownia Reception)</li>
+                            <li>16:00 <i class="fa-solid fa-church icon-gold"></i> <strong>Wedding Ceremony</strong> (Church on Palace grounds)</li>
+                            <li>16:45 <i class="fa-solid fa-camera icon-gold"></i> Group photo</li>
+                            <li>17:00 <i class="fa-regular fa-heart icon-gold"></i> Wishes at <strong>Writers' & Poets' Island</strong></li>
+                            <li>18:00 <i class="fa-solid fa-champagne-glasses icon-gold"></i> Traditional Welcome & Aperitif</li>
+                            <li>18:30 <i class="fa-solid fa-utensils icon-gold"></i> Gala Dinner</li>
+                            <li>20:00 <i class="fa-solid fa-music icon-gold"></i> Dancing in the <strong>Orangery</strong></li>
+                            <li>22:00 Hot meal service</li>
+                        </div>
+
+                        <div class="lang-content no">
+                            <li>14:00–15:30 <i class="fa-solid fa-key icon-gold"></i> Innsjekking på hotell (Wozownia Resepsjon)</li>
+                            <li>16:00 <i class="fa-solid fa-church icon-gold"></i> <strong>Vielse</strong> (Kirken på slottsområdet)</li>
+                            <li>16:45 <i class="fa-solid fa-camera icon-gold"></i> Fellesbilde</li>
+                            <li>17:00 <i class="fa-regular fa-heart icon-gold"></i> Gratulasjoner på <strong>Forfatter- og Dikterøya</strong></li>
+                            <li>18:00 <i class="fa-solid fa-champagne-glasses icon-gold"></i> Tradisjonell velkomst og aperitiff</li>
+                            <li>18:30 <i class="fa-solid fa-utensils icon-gold"></i> Festmiddag</li>
+                            <li>20:00 <i class="fa-solid fa-music icon-gold"></i> Dans i <strong>Oransjeriet</strong></li>
+                            <li>22:00 Servering av varmt måltid</li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <span class="timeline-day">
+                        <span class="lang-content pl active">Niedziela, 5 lipca 2026</span>
+                        <span class="lang-content en">Sunday, July 5th, 2026</span>
+                        <span class="lang-content no">Søndag 5. juli 2026</span>
+                    </span>
+                    <ul class="timeline-events">
+                        <div class="lang-content pl active">
+                            <li>00:00 <strong>Tort weselny</strong> 🎂</li>
+                            <li>01:00 Oczepiny</li>
+                            <li>02:00 Zabawa do białego rana</li>
+                            <li>04:00 <i class="fa-regular fa-sun icon-gold"></i> Powitanie dnia nad Liwcem</li>
+                            <li>04:21 Wschód Słońca</li>
+                            <li>09:00-11:00 <i class="fa-solid fa-mug-hot icon-gold"></i> <strong>Śniadanie poprawinowe</strong> (Restauracja Paśnik)</li>
+                            <li>11:00 Piknik poprawinowy w Folwarku</li>
+                            <li>14:00 <i class="fa-solid fa-fire icon-gold"></i> Grill i ognisko (Wiata nad Liwcem)</li>
+                        </div>
+
+                        <div class="lang-content en">
+                            <li>00:00 <strong>Wedding Cake</strong> 🎂</li>
+                            <li>01:00 "Oczepiny" (Traditional games)</li>
+                            <li>02:00 Party until dawn</li>
+                            <li>04:00 <i class="fa-regular fa-sun icon-gold"></i> Sunrise greeting by the river</li>
+                            <li>09:00-11:00 <i class="fa-solid fa-mug-hot icon-gold"></i> <strong>Breakfast</strong> (Paśnik Restaurant)</li>
+                            <li>11:00 Picnic at the Grange</li>
+                            <li>14:00 <i class="fa-solid fa-fire icon-gold"></i> BBQ & Bonfire</li>
+                        </div>
+
+                        <div class="lang-content no">
+                            <li>00:00 <strong>Bryllupskake</strong> 🎂</li>
+                            <li>01:00 "Oczepiny" (Tradisjonelle leker)</li>
+                            <li>02:00 Fest til morgengry</li>
+                            <li>04:00 <i class="fa-regular fa-sun icon-gold"></i> Soloppgang ved elven</li>
+                            <li>09:00-11:00 <i class="fa-solid fa-mug-hot icon-gold"></i> <strong>Frokost</strong> (Paśnik Restaurant)</li>
+                            <li>11:00 Piknik på Gården</li>
+                            <li>14:00 <i class="fa-solid fa-fire icon-gold"></i> Grill og bål</li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-card" id="noclegi">
+        <h2>
+            <i class="fa-solid fa-bed icon-gold"></i>
+            <span class="lang-content pl active">Noclegi</span>
+            <span class="lang-content en">Accommodation</span>
+            <span class="lang-content no">Overnatting</span>
+        </h2>
+        <div class="lang-content pl active">
+            <ul>
+                <li>Pokoje hotelowe znajdują się w <strong>Wozowni i Pałacu</strong></li>
+                <li>Po zaparkowaniu udajcie się do <strong>recepcji hotelowej w budynku Wozowni</strong>, gdzie otrzymacie klucz do pokoju</li>
+                <li>Każdy pokój jest z prywatną łazienką i ręcznikami</li>
+                <li><strong>Zameldowanie</strong> w sobotę w godz. <strong>14:00-15:30</strong></li>
+                <li><strong>Wymeldowanie</strong> w niedzielę do godz. <strong>10:00</strong></li>
+                <li>Po wymeldowaniu zanieście swoje rzeczy do samochodów i kierujcie się na <strong>Śniadanie Poprawinowe</strong> do <strong>Restauracji Paśnik</strong>, które będzie serwowane w godz. <strong>9:00-11:00</strong>.</li>
+            </ul>
+        </div>
+        <div class="lang-content en">
+            <ul>
+                <li>Rooms are located in the <strong>Carriage House (Wozownia) and the Palace</strong>.</li>
+                <li>Please proceed to the <strong>reception in the Carriage House</strong> to get your room key.</li>
+                <li>All rooms have private bathrooms and towels.</li>
+                <li><strong>Check-in:</strong> Saturday 14:00-15:30.</li>
+                <li><strong>Check-out:</strong> Sunday by 10:00.</li>
+                <li>After check-out, please move luggage to your cars and head to <strong>Breakfast</strong> at <strong>Paśnik Restaurant</strong> (9:00-11:00).</li>
+            </ul>
+        </div>
+        <div class="lang-content no">
+            <ul>
+                <li>Rommene ligger i <strong>Vognhuset (Wozownia) og Palasset</strong>.</li>
+                <li>Vennligst gå til <strong>resepsjonen i Vognhuset</strong> for å få romnøkkelen.</li>
+                <li>Alle rom har eget bad og håndklær.</li>
+                <li><strong>Innsjekking:</strong> Lørdag 14:00-15:30.</li>
+                <li><strong>Utsjekking:</strong> Søndag innen 10:00.</li>
+                <li>Etter utsjekking, vennligst flytt bagasjen til bilene og gå til <strong>Frokost</strong> på <strong>Paśnik Restaurant</strong> (9:00-11:00).</li>
+            </ul>
+        </div>
+        <img src="teren.jpg" loading="lazy" alt="Mapa terenu" class="map centered-img"/>
+    </div>
+
+    <div class="section-card" id="poprawiny">
+        <h2>
+            <i class="fa-solid fa-umbrella-beach icon-gold"></i>
+            <span class="lang-content pl active">Niedziela poprawinowa</span>
+            <span class="lang-content en">Sunday Fun</span>
+            <span class="lang-content no">Søndagshygge</span>
+        </h2>
+        <div class="lang-content pl active">
+            <ul>
+                <li>Wszyscy goście w ramach pobytu mają dostęp do całego <strong>kompleksu Pałacu i Folwarku Łochów, w tym strefy SPA z basenem i saunami</strong> (przy recepcji obok restauracji Paśnik) oraz całego terenu obiektu, na którym znajdują się m.in. <strong>urokliwa rzeka Liwiec oraz mini zoo</strong> położone niedaleko restauracji Paśnik</li>
+                <li>W godzinach <strong>9:00-11:00</strong> zapraszamy Was na serwowane w formie bufetu <strong>śniadanie poprawinowe</strong> w <strong>Restauracji Paśnik</strong></li>
+                <li>Trzymając kciuki za dobrą pogodę, zapraszamy Was do spędzenia z nami niedzieli poprawinowej w formie <strong>pikniku nad rzeką Liwiec</strong> na terenie Folwarku</li>
+                <li>O <strong>14:00</strong> odpalamy <strong>grilla i ognisko poprawinowe</strong> w <strong>Wiacie nad Liwcem</strong></li>
+                <li>Warto zabrać ze sobą: wygodne letnie ubrania, strój kąpielowy, ręcznik, koc piknikowy, nakrycie głowy (kapelusz lub czapkę), okulary przeciwsłoneczne, krem z filtrem UV, SUPa, materac do wody, ręcznik do sauny (i... parasolkę, jeśli prognozy pogody będą kapryśne...)</li>
+            </ul>
+        </div>
+        <div class="lang-content en">
+            <ul>
+                <li>All guests have access to the <strong>SPA zone (pool, saunas)</strong> and the entire complex grounds, including the Liwiec river and mini zoo.</li>
+                <li><strong>9:00-11:00</strong> Buffet Breakfast at <strong>Paśnik Restaurant</strong>.</li>
+                <li>Weather permitting, join us for a <strong>picnic by the river</strong>.</li>
+                <li>At <strong>14:00</strong>: BBQ and Bonfire at the Shelter by the Liwiec River.</li>
+                <li><strong>What to bring?</strong> Comfortable clothes, swimsuit, towel, picnic blanket, sunglasses, sunscreen, and good vibes!</li>
+            </ul>
+        </div>
+        <div class="lang-content no">
+            <ul>
+                <li>Alle gjester har tilgang til <strong>SPA-sonen (basseng, badstuer)</strong> og hele komplekset, inkludert Liwiec-elven og mini-zoo.</li>
+                <li><strong>9:00-11:00</strong> Frokostbuffé på <strong>Paśnik Restaurant</strong>.</li>
+                <li>Hvis været tillater det, bli med oss på <strong>piknik ved elven</strong>.</li>
+                <li>Kl. <strong>14:00</strong>: Grill og bål ved lyet ved Liwiec-elven.</li>
+                <li><strong>Hva bør du ta med?</strong> Komfortable klær, badetøy, håndkle, piknikteppe, solbriller, solkrem og godt humør!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-card" id="lokalizacja">
+        <h2>
+            <i class="fa-solid fa-map-location-dot icon-gold"></i>
+            <span class="lang-content pl active">Lokalizacja i dojazd</span>
+            <span class="lang-content en">Location & Travel</span>
+            <span class="lang-content no">Beliggenhet og Reise</span>
+        </h2>
+        <div style="text-align:center; margin-bottom:20px;">
+            <b>Adres:</b> Pałac i Folwark Łochów, ul. Marii Konopnickiej 1, Łochów<br>
+            <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank" class="btn"><i class="fa-solid fa-location-arrow"></i> Google Maps</a><br>
+            <div style="margin-top:10px;">
+                <span class="lang-content pl active"><b>Parking:</b> Bezpłatny parking dla gości weselnych dostępny jest na terenie kompleksu z tyłu budynku Wozowni</span>
+                <span class="lang-content en"><b>Parking:</b> Free parking available behind the Carriage House (Wozownia).</span>
+                <span class="lang-content no"><b>Parkering:</b> Gratis parkering tilgjengelig bak Vognhuset (Wozownia).</span>
+            </div>
+        </div>
+        
+        <div class="lang-content pl active">
+            <p><b>Jak dojechać?</b> Najwygodniej samochodem! Wrzućcie w nawigację adres: <strong>ul. Marii Konopnickiej 1, Łochów</strong>. Pamiętajcie, że dojazd z Warszawy, Łomży czy Zambrowa zajmuje około 1h.</p>
+            <p>Alternatywnie do Łochowa można dojechać <strong>pociągiem</strong> z Warszawy i Białegostoku. Jeśli ktoś z Was będzie planował przyjazd pociągiem, prosimy dajcie nam odpowiednio wcześniej znać, żebyśmy mogli zorganizować odebranie Was ze stacji kolejowej w Łochowie.</p>
+            <p>Na teren kompleksu można także dopłynąć łodzią rzeką Liwiec, przylecieć śmigłowcem lub przyjechać konno... Jeśli komuś przyjdzie do głowy taki środek transportu, to zdecydowanie dajcie nam znać wcześniej! ;)</p>
+            <h3 style="text-align:center;">Jak trafić na parking:</h3>
+            <p>Dla tych którzy zdecydowali się na samochód - jak dojedziecie do <strong>zielonego baneru z nazwą Pałac i Folwark Łochów</strong> to prosto na pałac!</p>
+        </div>
+        
+        <div class="lang-content en">
+            <p><b>How to get there?</b> Car is easiest! Address: <strong>ul. Marii Konopnickiej 1, Łochów</strong>. Drive takes about 1h from Warsaw.</p>
+            <p>Alternatively, you can take a <strong>train</strong> from Warsaw or Białystok. Let us know if you choose the train so we can arrange a pickup from the station.</p>
+            <h3 style="text-align:center;">Finding the parking:</h3>
+            <p>Once you pass the green banner "Pałac i Folwark Łochów", head straight towards the palace!</p>
+        </div>
+
+        <div class="lang-content no">
+            <p><b>Hvordan komme seg dit?</b> Bil er enklest! Adresse: <strong>ul. Marii Konopnickiej 1, Łochów</strong>. Kjøreturen tar ca. 1 time fra Warszawa.</p>
+            <p>Alternativt kan du ta <strong>tog</strong> fra Warszawa eller Białystok. Gi oss beskjed om du velger tog, så vi kan ordne henting fra stasjonen.</p>
+            <h3 style="text-align:center;">Finne parkeringen:</h3>
+            <p>Når du passerer det grønne banneret "Pałac i Folwark Łochów", kjør rett frem mot palasset!</p>
+        </div>
+
+        <img src="Parking 2.jpg" loading="lazy" alt="Brama" class="map centered-img"/>
+        
+        <div class="lang-content pl active"><p>Po przejechaniu <strong>głównej bramy</strong> kierujcie się <strong>od razu na lewo w stronę Wozowni</strong>.</p></div>
+        <div class="lang-content en"><p>After passing the <strong>main gate</strong>, turn <strong>immediately left towards "Wozownia"</strong>.</p></div>
+        <div class="lang-content no"><p>Etter å ha passert <strong>hovedporten</strong>, sving <strong>umiddelbart til venstre mot "Wozownia"</strong>.</p></div>
+
+        <img src="Parking 1.jpg" loading="lazy" alt="Skręt" class="map centered-img"/>
+        
+        <div class="lang-content pl active"><p>Parking znajduje się za budynkiem Wozowni. Po zaparkowaniu udajcie się do Recepcji w Budynku Wozowni.</p></div>
+        <div class="lang-content en"><p>Parking is located behind the Wozownia building. Go to the Reception there to get your keys.</p></div>
+        <div class="lang-content no"><p>Parkering ligger bak Wozownia-bygningen. Gå til resepsjonen der for å få nøklene dine.</p></div>
+
+        <img src="Parking 3.jpg" loading="lazy" alt="Parking" class="map centered-img"/>
+        
+        <p style="text-align:center; margin-top:30px; font-weight:bold;">
+            <span class="lang-content pl active">Dla pewności rzut z góry – trasa wjazdu na parking za Wozownią:</span>
+            <span class="lang-content en">Satellite view of the entry route:</span>
+            <span class="lang-content no">Satellittvisning av innkjøringsveien:</span>
+        </p>
+        <img src="Parking 4.jpg" loading="lazy" alt="Mapa satelitarna" class="map centered-img"/>
+    </div>
+
+    <div class="section-card" id="fraszka" style="background-color: #fdfbf9; border: 2px dashed #d4c5b0;">
+        <h2>
+            <i class="fa-solid fa-gift icon-gold"></i>
+            <span class="lang-content pl active">Fraszka prezentowa</span>
+            <span class="lang-content en">Gift Information</span>
+            <span class="lang-content no">Gaveinformasjon</span>
+        </h2>
+        
+        <div class="lang-content pl active">
+             <p>Od pewnego Sztucznego Inteligenta dostaliśmy w prezencie grafomańską fraszkę. Jakkolwiek forma mogłaby być nieco lepsza, to z treścią nie umiemy się nie zgodzić...</p>
+             <div style="text-align: center; margin: 20px 0; font-style: italic; color: #5f4a29; font-size: 1.1em;">
+                "Kochani Goście, nie kombinujcie,<br>
+                Prezentów, kwiatów nie pakujcie!<br>
+                Wino i słodycze zostawcie w sklepie,<br>
+                Książki z dedykacją – te wpadną nam w serce!<br>
+                A jeśli się głowisz, co zrobić z kopertą,<br>
+                Wrzuć trochę złotówek – nie będzie nam przykro!<br>
+                Niech Was nie martwi wybór podarku,<br>
+                Książka lub koperta sprawią nam uśmiech bez żartu!"
+            </div>
+        </div>
+
+        <div class="lang-content en" style="text-align: center; margin: 20px 0; color: #5f4a29;">
+            <p>Your presence is the greatest gift of all! However, if you wish to honour us with a gift, a small contribution towards our future together would be very much appreciated.</p>
+            <p>Instead of flowers, we would love to receive <strong>books with a dedication</strong> – something we can keep forever!</p>
+        </div>
+
+        <div class="lang-content no" style="text-align: center; margin: 20px 0; color: #5f4a29;">
+            <p>Deres nærvær er den største gaven av alle! Men hvis dere ønsker å gi oss en gave, setter vi stor pris på et lite bidrag til vår felles fremtid.</p>
+            <p>Istedenfor blomster, ville vi elske å motta <strong>bøker med en dedikasjon</strong> – noe vi kan beholde for alltid!</p>
+        </div>
+
+        <img src="prezent.jpg" loading="lazy" alt="Prezent" class="map centered-img" style="max-width: 300px;"/>
+    </div>
+
+    <div class="section-card" id="rsvp">
+        <h2>
+            <i class="fa-regular fa-envelope icon-gold"></i> RSVP
+        </h2>
+        <p style="text-align: center;">
+            <span class="lang-content pl active">Prosimy o potwierdzenie przybycia do <strong>1 marca 2026</strong>.</span>
+            <span class="lang-content en">Please confirm your attendance by <strong>March 1st, 2026</strong>.</span>
+            <span class="lang-content no">Vennligst bekreft deres deltakelse innen <strong>1. mars 2026</strong>.</span>
+        </p>
+
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wesele+Ani+i+Andrzeja&dates=20260704T140000Z/20260705T140000Z&location=Pałac+i+Folwark+Łochów,+ul.+Marii+Konopnickiej+1,+Łochów&details=Zaślubiny+i+wesele+Ani+i+Andrzeja,+4-5+lipca+2026,+Pałac+i+Folwark+Łochów.+Msza+ślubna+o+godz.+16:00+w+Kościele+Miłosierdzia+Bożego+na+terenie+pałacu.+Noclegi+zapewnione+w+hotelowych+apartamentach,+zameldowanie+w+Recepcji+Wozowni+od+14:30+do+15:00,+parking+za+Wozownią.+Śniadanie+poprawinowe+9:00-11:00.+Mapka:+https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank" class="btn">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span class="lang-content pl active">Dodaj do kalendarza Google</span>
+                <span class="lang-content en">Add to Google Calendar</span>
+                <span class="lang-content no">Legg til i Google Kalender</span>
+            </a>
+        </div>
+
+        <p style="font-size:0.9em; color:#5f4a29; text-align:center;">
+            <span class="lang-content pl active">Wypełniając formularz RSVP, Twoje odpowiedzi są bezpieczne i trafiają tylko do organizatorów.</span>
+            <span class="lang-content en">Your RSVP answers are secure and sent only to the organizers.</span>
+            <span class="lang-content no">Dine RSVP-svar er trygge og sendes kun til arrangørene.</span>
+        </p>
+        <div class="gform-container">
+            <h3 style="color:#7a6337; text-align:center;">
+                <span class="lang-content pl active">Formularz RSVP</span>
+                <span class="lang-content en">RSVP Form</span>
+                <span class="lang-content no">RSVP Skjema</span>
+            </h3>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOqnmovJ7cn8RKicXawlLwdFGOi1vYBEbRrcqSl6j_aOCK_Q/viewform?embedded=true" allowfullscreen title="Formularz RSVP"></iframe>
+        </div>
+    </div>
+
+    <div class="section-card" id="zdjecia" style="text-align: center;">
+        <h2>
+            <i class="fa-solid fa-camera-retro icon-gold"></i>
+            <span class="lang-content pl active">Zdjęcia</span>
+            <span class="lang-content en">Photos</span>
+            <span class="lang-content no">Bilder</span>
+        </h2>
+        
+        <p>
+            <span class="lang-content pl active">Wasze zdjęcia to dla nas najpiękniejsza pamiątka!</span>
+            <span class="lang-content en">Your photos are the best souvenir for us!</span>
+            <span class="lang-content no">Dine bilder er den beste suveniren for oss!</span>
+        </p>
+
+        <div style="margin: 30px 0; text-align: center;">
+            <div style="margin-bottom: 30px;">
+                <a href="https://photos.app.goo.gl/rnL3cGxnpVRFFsXB6" target="_blank" class="btn"><i class="fa-brands fa-google"></i> Google Photos Album</a>
+                <p class="desc-text">
+                    <span class="lang-content pl active">Wrzucajcie tu zdjęcia w <strong>pełnej jakości</strong>. Nasz cyfrowy album na lata.</span>
+                    <span class="lang-content en">Upload <strong>high-quality</strong> photos here. Our digital album forever.</span>
+                    <span class="lang-content no">Last opp bilder i <strong>høy kvalitet</strong> her. Vårt digitale album for alltid.</span>
+                </p>
+            </div>
+
+            <div>
+                <a href="https://chat.whatsapp.com/JnhPSGAt9d49hSMPFU6eST?mode=hqrt1" target="_blank" class="btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp Group</a>
+                <p class="desc-text">
+                    <span class="lang-content pl active">Szybkie fotki "na gorąco" i integracja gości!</span>
+                    <span class="lang-content en">Quick snapshots and chatting with other guests!</span>
+                    <span class="lang-content no">Raske øyeblikksbilder og prat med andre gjester!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-card" id="muzyka" style="text-align: center;">
+        <h2>
+            <i class="fa-solid fa-music icon-gold"></i>
+            <span class="lang-content pl active">Muzyka</span>
+            <span class="lang-content en">Music</span>
+            <span class="lang-content no">Musikk</span>
+        </h2>
+        
+        <div class="lang-content pl active">
+            <p><strong>Parkiet jest Wasz!</strong> Chcemy, żebyście bawili się do muzyki, którą kochacie. Nie krępujcie się – dodajcie swoje ulubione kawałki do naszej wspólnej playlisty. Discopolo, rock, lata 80.? Wszystko (no, prawie wszystko...) dozwolone!</p>
+        </div>
+        <div class="lang-content en">
+            <p><strong>The dancefloor is yours!</strong> We want you to dance to the music you love. Don't be shy – add your favorite tracks to our shared playlist. Disco, rock, 80s? Everything goes!</p>
+        </div>
+        <div class="lang-content no">
+            <p><strong>Dansegulvet er deres!</strong> Vi vil at dere skal danse til musikken dere elsker. Ikke vær sjenert – legg til favorittlåtene deres i vår felles spilleliste. Disco, rock, 80-tallet? Alt er lov!</p>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="https://open.spotify.com/playlist/2x34k1aOlKeJvNw618QGL0?si=024ba45b95ee489c&pt=d800900bc28a6cad9552b6c6247b0403" target="_blank" class="btn spotify"><i class="fa-brands fa-spotify"></i> Spotify Playlist</a>
+        </div>
+    </div>
+
+    <div class="section-card" id="hist-palac">
+        <h2>
+            <i class="fa-solid fa-landmark icon-gold"></i>
+            <span class="lang-content pl active">Historia Pałacu</span>
+            <span class="lang-content en">History of the Palace</span>
+            <span class="lang-content no">Palassets historie</span>
+        </h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/J8pTJq9kXcg" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        
+        <div class="lang-content pl active">
+            <p><span class="bold">Dawno, dawno temu</span>, pewien <span class="bold">hrabia Józef Hornowski</span> zapragnął domku marzeń...</p>
+        </div>
+        <div class="lang-content en">
+            <p><span class="bold">Long, long ago</span>, a certain <span class="bold">Count Józef Hornowski</span> dreamed of a dream house...</p>
+        </div>
+        <div class="lang-content no">
+            <p><span class="bold">For lenge, lenge siden</span> drømte en viss <span class="bold">grev Józef Hornowski</span> om et drømmehus...</p>
+        </div>
+
+        <details>
+            <summary>
+                <span class="lang-content pl active">Czytaj dalej historię... ▼</span>
+                <span class="lang-content en">Read the full story... ▼</span>
+                <span class="lang-content no">Les hele historien... ▼</span>
+            </summary>
+            
+            <div class="lang-content pl active">
+                <p>Potem przyszedł modny <span class="bold">architekt Podczaszyński</span> i wyczarował dwa piętrowe <span class="bold">ryzality</span> oraz <span class="bold">portyk z kolumnami z żeliwa</span>. Wnętrza wykończono zgodnie z modą na „dużo ozdób, mało minimalizmu”. Pałac był niczym <span class="bold">„Oxford dla arystokracji”</span> – przewinęli się tu <span class="bold">Hornowscy</span>, <span class="bold">Zamoyscy</span>, <span class="bold">Downarowiczowie</span> i <span class="bold">Kurnatowscy</span>. W czasie rozkwitu za <span class="bold">Zdzisława Zamoyskiego</span> stajnia była pełna najlepszych rumaków na Mazowszu i Podlasiu, a przy poprawinach śmiano się z francuskich kolejek (<span class="bold">kolej Paryż-Petersburg</span> przejeżdżała praktycznie obok!). Gdy <span class="bold">„weselne czasy” minęły</span> i pałac wpadł w ręce państwowe, z sal muzycznych zrobiono <span class="bold">świetlicę</span>, a z <span class="bold">pieców kaflowych... skrytki na listy</span>. Na szczęście nie wszystko zniknęło – <span class="bold">stylowe parkiety</span> i kilka zdobień ocalało! A na leżankach poetycki <span class="bold">cyprian Norwid</span> bywał w gościach i szukał inspiracji do wierszy, no bo przecież nie grafomańskich fraszek... (mówią, że jeden wiersz powstał podczas podjadania pałacowego sernika...). W <span class="bold">XXI wieku</span> pojawiła się ekipa <span class="bold">Arche S.A.</span>, która pod okiem <span class="bold">Władysława Grochowskiego</span> wymalowała pędzlem nową epokę. Pałac – odrestaurowany, odświeżony, na powrót pełen gości i tanecznych melodii. <span class="bold">Dzisiaj – tak jak dawniej – jest idealnym miejscem na najlepszą zabawę w rodzinnej atmosferze!</span></p>
+            </div>
+            
+            <div class="lang-content en">
+                <p>Then came the fashionable <span class="bold">architect Podczaszyński</span>, who conjured up two multi-story <span class="bold">avant-corps</span> and a <span class="bold">portico with cast-iron columns</span>. The interiors were finished according to the fashion of "lots of ornaments, little minimalism". The palace was like an <span class="bold">"Oxford for the aristocracy"</span> – the <span class="bold">Hornowski</span>, <span class="bold">Zamoyski</span>, <span class="bold">Downarowicz</span>, and <span class="bold">Kurnatowski</span> families all passed through here. In the heyday under <span class="bold">Zdzisław Zamoyski</span>, the stables were full of the best steeds in Mazovia and Podlasie, and during after-parties, they laughed at French trains (the <span class="bold">Paris-Petersburg railway</span> passed practically next door!). When the <span class="bold">"wedding times" passed</span> and the palace fell into state hands, the music halls were turned into a <span class="bold">common room</span>, and <span class="bold">tiled stoves... into mailboxes</span>. Fortunately, not everything disappeared – <span class="bold">stylish parquet floors</span> and some decorations survived! And on the chaise lounges, the poetic <span class="bold">Cyprian Norwid</span> was a guest, looking for inspiration for poems, because certainly not graphomaniac limericks... (they say one poem was created while snacking on palace cheesecake...). In the <span class="bold">21st century</span>, the <span class="bold">Arche S.A.</span> team appeared, painting a new era under the watchful eye of <span class="bold">Władysław Grochowski</span>. The palace – restored, refreshed, once again full of guests and dance melodies. <span class="bold">Today – just like in the old days – it is the perfect place for the best fun in a family atmosphere!</span></p>
+            </div>
+
+            <div class="lang-content no">
+                <p>Så kom den moteriktige <span class="bold">arkitekten Podczaszyński</span> og tryllet frem to etasjes <span class="bold">risalitter</span> og en <span class="bold">portikus med støpejernssøyler</span>. Interiøret ble ferdigstilt i tråd med moten "mye pynt, lite minimalisme". Palasset var som et <span class="bold">"Oxford for aristokratiet"</span> – familiene <span class="bold">Hornowski</span>, <span class="bold">Zamoyski</span>, <span class="bold">Downarowicz</span> og <span class="bold">Kurnatowski</span> var alle innom her. I storhetstiden under <span class="bold">Zdzisław Zamoyski</span> var stallen full av de beste hestene i Mazovia og Podlasie, og under etterfestene lo de av franske tog (<span class="bold">Paris-Petersburg-jernbanen</span> gikk praktisk talt rett forbi!). Da <span class="bold">"bryllupstidene" var over</span> og palasset falt i statens hender, ble musikksalene gjort om til et <span class="bold">fellesrom</span>, og <span class="bold">flislagte ovner... til postkasser</span>. Heldigvis forsvant ikke alt – <span class="bold">stilige parkettgulv</span> og noen dekorasjoner overlevde! Og på sjeselongene var den poetiske <span class="bold">Cyprian Norwid</span> gjest og lette etter inspirasjon til dikt, for slett ikke grafomane limericks... (de sier at ett dikt ble til mens han spiste palassets ostekake...). I det <span class="bold">21. århundre</span> dukket teamet fra <span class="bold">Arche S.A.</span> opp, og malte en ny æra under oppsyn av <span class="bold">Władysław Grochowski</span>. Palasset – restaurert, oppfrisket, igjen fullt av gjester og dansemelodier. <span class="bold">I dag – akkurat som i gamle dager – er det det perfekte stedet for den beste moroa i en familiær atmosfære!</span></p>
+            </div>
+        </details>
+        
+        <img src="palac.jpg" loading="lazy" alt="Pałac" class="map centered-img"/>
+    </div>
+
+    <div class="section-card" id="hist-kosciol">
+        <h2>
+            <i class="fa-solid fa-church icon-gold"></i>
+            <span class="lang-content pl active">Historia Kościoła</span>
+            <span class="lang-content en">History of the Church</span>
+            <span class="lang-content no">Kirkens historie</span>
+        </h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/bDE66ejBJhU" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+        
+        <div class="lang-content pl active">
+            <p><span class="bold">Parafialne legendy</span> mówią, że w <span class="bold">1932 roku</span> do <span class="bold">Wólki Dobryńskiej</span> dotarło marzenie: „trzeba nam kaplicy!”</p>
+        </div>
+        <div class="lang-content en">
+            <p><span class="bold">Parish legends</span> say that in <span class="bold">1932</span> a dream reached <span class="bold">Wólka Dobryńska</span>: "we need a chapel!"</p>
+        </div>
+        <div class="lang-content no">
+            <p><span class="bold">Sognehistorier</span> sier at i <span class="bold">1932</span> nådde en drøm <span class="bold">Wólka Dobryńska</span>: "vi trenger et kapell!"</p>
+        </div>
+
+        <details>
+            <summary>
+                <span class="lang-content pl active">Czytaj dalej historię... ▼</span>
+                <span class="lang-content en">Read the full story... ▼</span>
+                <span class="lang-content no">Les hele historien... ▼</span>
+            </summary>
+            
+            <div class="lang-content pl active">
+                <p>Pomysł podsunął <span class="bold">ks. Michalik</span>, ekipa cieśli rzuciła się do pracy, a <span class="bold">architekt Mazur</span> dostał swój „project of the year”. Budowa szła tak szybko, że ponoć nawet <span class="bold">bociany pomagały</span> – powstał <span class="bold">trójnawowy, drewniany kościół</span> z ołtarzem <span class="bold">św. Stanisława Kostki</span>. Świątynię zdobiły nie tylko <span class="bold">trzy ołtarze</span>, ale i <span class="bold">chór oraz prezbiterium</span>, a <span class="bold">Grzegorz Mincewicz</span> cieszył się, że „jego dzieło” podziwiają goście i parafianie. Budowa trwała ledwie <span class="bold">cztery miesiące</span> – po czym <span class="bold">biskup Michalik</span> poświęcił obiekt, a w <span class="bold">1933</span> powstała tu parafia <span class="bold">św. Stanisława</span>. Kościół wytrzymał <span class="bold">72 lata</span> wesel, świąt i modlitw. Gdy nadszedł <span class="bold">2009 rok</span>, drewniane ściany ruszyły w bajeczną podróż do Łochowa – na pałacowe tereny i w ręce konserwatorów. Tam kościółowi dano „drugą młodość” – a nawet <span class="bold">nowe wezwanie Miłosierdzia Bożego</span>! Podczas rekonsekracji w <span class="bold">maju 2010 roku</span> biskup <span class="bold">Antoni Dydycz</span>, proboszczowie oraz goście świętowali nadanie nowego patrona, a <span class="bold">tablica we wnętrzu</span> przypomina o tym żywym kawałku historii. Dziś kościół jest nie tylko miejscem modlitwy, ale i pamiątką niesamowitej podróży – od <span class="bold">tętniącej życiem Wólki</span> aż po <span class="bold">magiczne tereny Łochowa</span>!</p>
+            </div>
+
+            <div class="lang-content en">
+                <p>The idea was suggested by <span class="bold">Fr. Michalik</span>, a team of carpenters rushed to work, and <span class="bold">architect Mazur</span> got his "project of the year". Construction went so fast that apparently even <span class="bold">storks helped</span> – a <span class="bold">three-nave wooden church</span> with an altar of <span class="bold">St. Stanislaus Kostka</span> was created. The temple was adorned not only with <span class="bold">three altars</span> but also a <span class="bold">choir and presbytery</span>, and <span class="bold">Grzegorz Mincewicz</span> rejoiced that "his work" was admired by guests and parishioners. Construction took barely <span class="bold">four months</span> – after which <span class="bold">Bishop Michalik</span> consecrated the building, and in <span class="bold">1933</span> the parish of <span class="bold">St. Stanislaus</span> was established here. The church withstood <span class="bold">72 years</span> of weddings, holidays, and prayers. When <span class="bold">2009</span> arrived, the wooden walls set off on a fabulous journey to Łochów – to the palace grounds and into the hands of conservators. There, the church was given a "second youth" – and even a <span class="bold">new dedication to Divine Mercy</span>! During the reconsecration in <span class="bold">May 2010</span>, Bishop <span class="bold">Antoni Dydycz</span>, parish priests, and guests celebrated the naming of the new patron, and a <span class="bold">plaque inside</span> reminds of this living piece of history. Today, the church is not only a place of prayer but also a souvenir of an incredible journey – from the <span class="bold">bustling Wólka</span> to the <span class="bold">magical grounds of Łochów</span>!</p>
+            </div>
+
+            <div class="lang-content no">
+                <p>Ideen ble foreslått av <span class="bold">Fr. Michalik</span>, et team av tømrere kastet seg over arbeidet, og <span class="bold">arkitekt Mazur</span> fikk sitt "årets prosjekt". Byggingen gikk så raskt at tilsynelatende til og med <span class="bold">storker hjalp til</span> – en <span class="bold">treenig trekirke</span> med et alter for <span class="bold">St. Stanislaus Kostka</span> ble skapt. Tempelet var utsmykket ikke bare med <span class="bold">tre altere</span>, men også et <span class="bold">kor og presbyterium</span>, og <span class="bold">Grzegorz Mincewicz</span> gledet seg over at "hans verk" ble beundret av gjester og sognebarn. Byggingen tok knapt <span class="bold">fire måneder</span> – hvoretter <span class="bold">biskop Michalik</span> vigslet bygningen, og i <span class="bold">1933</span> ble sognet <span class="bold">St. Stanislaus</span> opprettet her. Kirken tålte <span class="bold">72 år</span> med brylluper, høytider og bønner. Da <span class="bold">2009</span> kom, la treveggene ut på en fabelaktig reise til Łochów – til palassområdet og i hendene på konservatorer. Der fikk kirken en "annen ungdom" – og til og med en <span class="bold">ny dedikasjon til Guddommelig Barmhjertighet</span>! Under gjeninnvielsen i <span class="bold">mai 2010</span> feiret biskop <span class="bold">Antoni Dydycz</span>, sogneprester og gjester navngivningen av den nye skytshelgenen, og en <span class="bold">plakett inne</span> minner om dette levende stykket historie. I dag er kirken ikke bare et bønnested, men også et minne om en utrolig reise – fra det <span class="bold">travle Wólka</span> til de <span class="bold">magiske områdene i Łochów</span>!</p>
+            </div>
+        </details>
+        
+        <img src="kosciol.jpg" loading="lazy" alt="Kościół" class="map centered-img"/>
+    </div>
+
+    <div class="section-card" id="kontakt" style="background: #e8e4de; text-align: center;">
+        <h2>
+            <i class="fa-solid fa-address-book icon-gold"></i>
+            <span class="lang-content pl active">Kontakt</span>
+            <span class="lang-content en">Contact</span>
+            <span class="lang-content no">Kontakt</span>
+        </h2>
+        <div class="contact">
+            <b>Ania:</b> <a href="tel:+48692377639">+48692377639</a><br>
+            <b>Andrzej:</b> <a href="tel:+48600019865">+48600019865</a><br>
+            <b>Recepcja:</b> <a href="tel:+48797339329">+48797339329</a><br>
+            <b>Koordynator (Klaudia):</b> <a href="tel:+48530423929">+48530423929</a><br>
+            <b>Menedżer (Marta):</b> <a href="tel:+48664787906">+48664787906</a><br>
+        </div>
+    </div>
+    
+    <div class="backtotop" style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
+        <a href="#top" style="font-size: 1.5em; color:#8c734b;"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+
 </div>
-<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-<div class="section" id="noclegi">
-<h2>Noclegi</h2>
-<ul>
-<li>Pokoje hotelowe znajdują się w <strong>Wozowni i Pałacu</strong></li>
-<li>Po zaparkowaniu samochodu udajcie się do <strong>recepcji hotelowej w budynku Wozowni</strong>, gdzie otrzymacie klucz do pokoju</li>
-<li>Każdy pokój jest z prywatną łazienką i ręcznikami</li>
-<li><strong>Zameldowanie</strong> w sobotę w godz. <strong>14:00-15:30</strong></li>
-<li><strong>Wymeldowanie</strong> w niedzielę do godz. <strong>10:00</strong></li>
-<li>Po wymeldowaniu zanieście swoje rzeczy do samochodów i kierujcie się na <strong>Śniadanie Poprawinowe</strong> do <strong>Restauracji Paśnik</strong>, które będzie serwowane w godz. <strong>9:00-11:00</strong>.</li>
-</ul>
-<div class="section">
-<img src="teren.jpg" loading="lazy" alt="Mapa terenu Pałacu i Folwarku Łochów" class="map centered-img"/>
-</div>
-</div>
-<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-<div class="section" id="poprawiny">
-<h2>Niedziela poprawinowa</h2>
-<ul>
-<li>Wszyscy goście w ramach pobytu mają dostęp do całego <strong>kompleksu Pałacu i Folwarku Łochów, w tym strefy SPA z basenem i saunami</strong> (przy recepcji obok restauracji Paśnik) oraz całego terenu obiektu, na którym znajdują się m.in. <strong>urokliwa rzeka Liwiec oraz mini zoo</strong> położone niedaleko restauracji Paśnik</li>
-<li>W godzinach <strong>9:00-11:00</strong> zapraszamy Was na serwowane w formie bufetu <strong>śniadanie poprawinowe</strong> w <strong>Restauracji Paśnik</strong></li>
-<li>Trzymając kciuki za dobrą pogodę, zapraszamy Was do spędzenia z nami niedzieli poprawinowej w formie <strong>pikniku nad rzeką Liwiec</strong> na terenie Folwarku</li>
-<li>O <strong>14:00</strong> odpalamy <strong>grilla i ognisko poprawinowe</strong> w <strong>Wiacie nad Liwcem</strong></li>
-<li>Warto zabrać ze sobą: wygodne letnie ubrania, strój kąpielowy, ręcznik, koc piknikowy, nakrycie głowy (kapelusz lub czapkę), okulary przeciwsłoneczne, krem z filtrem UV, SUPa, materac do wody, ręcznik do sauny (i... parasolkę, jeśli prognozy pogody będą kapryśne...)</li>
-</ul>
-</div>
-<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-<div class="section" id="lokalizacja">
-<h2>Lokalizacja i dojazd</h2>
-<div><b>Adres:</b> Pałac i Folwark Łochów, ul. Marii Konopnickiej 1, Łochów</div>
-<div><a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank">Mapy Google</a></div>
-<div><b>Parking:</b> Bezpłatny parking dla gości weselnych dostępny jest na terenie kompleksu z tyłu budynku Wozowni</div>
-<p><b>Jak dojechać?</b> Najwygodniej samochodem! Wrzućcie w nawigację adres: <strong>ul. Marii Konopnickiej 1, Łochów</strong> lub kliknijcie <a href="https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank">tutaj</a>, żeby przejść do mapy Google. Siadajcie wygodnie w fotelach, zapinajcie pasy i jedźcie ostrożnie! Pamiętajcie, że dojazd z Warszawy, Łomży czy Zambrowa zajmuje około 1h. Wyjedźcie odpowiednio wcześniej i cieszcie się widokiem za oknem pięknych terenów pogranicza Podlasia i Mazowsza!</p>
-<p>Alternatywnie do Łochowa można dojechać <strong>pociągiem</strong> z Warszawy i Białegostoku. Jeśli ktoś z Was będzie planował przyjazd pociągiem, prosimy dajcie nam odpowiednio wcześniej znać, żebyśmy mogli zorganizować odebranie Was ze stacji kolejowej w Łochowie.</p>
-<p>Na teren kompleksu można także dopłynąć łodzią rzeką Liwiec, przylecieć śmigłowcem lub przyjechać konno... Jeśli komuś przyjdzie do głowy taki środek transportu, to zdecydowanie dajcie nam znać wcześniej! ;)</p>
-<h3 style="text-align:center;">Jak trafić na parking:</h3>
-<p>Dla tych którzy zdecydowali się na samochód - jak dojedziecie do <strong>zielonego baneru z nazwą Pałac i Folwark Łochów</strong> to prosto na pałac!</p>
-<img src="Parking 2.jpg" loading="lazy" alt="Mapa dojazdu do Pałacu i Folwarku Łochów" class="map centered-img"/>
-<p>Po przejechaniu <strong>głównej bramy</strong> kierujcie się <strong>od razu na lewo w stronę Wozowni</strong>.</p>
-<img src="Parking 1.jpg" loading="lazy" alt="Mapa dojazdu do Wozowni" class="map centered-img"/>
-<p>Parking znajduje się za budynkiem Wozowni. Po zaparkowaniu udajcie się do Recepcji w Budynku Wozowni, gdzie otrzymacie klucze do pokoju. Po zameldowaniu zapraszamy na spacer wokół dziedzińca pałacowego i kierujcie się w stronę zabytkowego Kościoła na godz. 15:45.</p>
-<img src="Parking 3.jpg" loading="lazy" alt="Parking za budynkiem Wozowni" class="map centered-img"/>
-<div class="section" style="text-align:center; font-size:1.15em; margin-top:28px;">
-Oczekujemy Was z radością!<br>
-<strong>Ania & Andrzej</strong>
-</div>
-</div>
-<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-<div class="gallery-section" id="fraszka">
-<h2>Fraszka</h2>
-<p>Od pewnego Sztucznego Inteligenta dostaliśmy w prezencie grafomańską fraszkę. Jakkolwiek forma mogłaby być nieco lepsza, to z treścią nie umiemy się nie zgodzić...
-<div style="text-align: center;">
-<i>"Kochani Goście, nie kombinujcie,<br>
-Prezentów, kwiatów nie pakujcie!<br>
-Wino i słodycze zostawcie w sklepie,<br>
-Książki z dedykacją – te wpadną nam w serce!<br>
-A jeśli się głowisz, co zrobić z kopertą,<br>
-Wrzuć trochę złotówek – nie będzie nam przykro!<br>
-Niech Was nie martwi wybór podarku,<br>
-Książka lub koperta sprawią nam uśmiech bez żartu!"</i>
-</div>
-</p>
-<div class="section">
-<img src="prezent.jpg" loading="lazy" alt="Prezent weselny - książki lub koperta" class="map centered-img"/>
-</div>
-</div>
-<h2 id="rsvp" style="text-align:center;">RSVP</h2>
-<p>Prosimy o potwierdzenie przybycia do <strong>1 marca 2026</strong> i informację, jeśli z jakichś względów nie będziecie chcieli skorzystać z noclegu, który zapewniamy dla wszystkich gości.</p>
-<p style="font-size:0.97em; color:#5f4a29;">
-Wypełniając formularz RSVP, Twoje odpowiedzi są bezpieczne i trafiają tylko do organizatorów. Dane nie są publiczne.
-</p>
-<div class="gform-container">
-<h3 style="color:#7a6337; text-align:center;">Formularz RSVP – Potwierdź obecność</h3>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOqnmovJ7cn8RKicXawlLwdFGOi1vYBEbRrcqSl6j_aOCK_Q/viewform?embedded=true" allowfullscreen title="Formularz RSVP"></iframe>
-</div>
-<div class="add-calendar-section" id="kalendarz">
-<h2>Dodaj wydarzenie do kalendarza Google!</h2>
-<p>
-Dodaj nasze wesele do swojego kalendarza Google jednym kliknięciem.<br>
-<strong>Jeżeli otwierasz na telefonie, użyj opcji otwarcia w nowej karcie/przeglądarce – aplikacje (Messenger, Gmail itp.) mogą nie obsługiwać dodawania wydarzeń.</strong>
-</p>
-<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wesele+Ani+i+Andrzeja&dates=20260704T140000Z/20260705T140000Z&location=Pałac+i+Folwark+Łochów,+ul.+Marii+Konopnickiej+1,+Łochów&details=Zaślubiny+i+wesele+Ani+i+Andrzeja,+4-5+lipca+2026,+Pałac+i+Folwark+Łochów.+Msza+ślubna+o+godz.+16:00+w+Kościele+Miłosierdzia+Bożego+na+terenie+pałacu.+Noclegi+zapewnione+w+hotelowych+apartamentach,+zameldowanie+w+Recepcji+Wozowni+od+14:30+do+15:00,+parking+za+Wozownią.+Śniadanie+poprawinowe+9:00-11:00.+Mapka:+https://maps.app.goo.gl/7W5KZ9vuJZvVAjkZ8" target="_blank" class="btn">Dodaj do kalendarza Google</a>
-</div>
-<div class="gallery-section" id="zdjecia">
-<h2>Wspólne zdjęcia z wesela!</h2>
-<p>
-Po uroczystości i podczas poprawin dzielcie się swoimi zdjęciami i filmikami!<br>
-<a href="https://photos.app.goo.gl/rnL3cGxnpVRFFsXB6" target="_blank" class="btn">Album Google Photos – Wrzucaj w pełnej jakości</a>
-<a href="https://chat.whatsapp.com/JnhPSGAt9d49hSMPFU6eST?mode=hqrt1" target="_blank" class="btn">Grupa WhatsApp – Szybkie zdjęcia i komentarze</a>
-</p>
-<p style="color:#777">
-Album Google Photos jest idealny do archiwizacji zdjęć w oryginalnej jakości.<br>
-Grupa WhatsApp służy do wymiany zdjęć, relacji i szybkich pytań!
-</p>
-</div>
-<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-<div class="section" id="hist-palac">
-<h2>Historia Pałacu i Folwarku Łochów</h2>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/J8pTJq9kXcg" title="YouTube video player" allowfullscreen></iframe>
-</div>
-<p>
-<span class="bold">Dawno, dawno temu</span>, pewien <span class="bold">hrabia Józef Hornowski</span> zapragnął domku marzeń. Nie chodziło o ciasne <span class="bold">M4</span>, ale <span class="bold">pałac z kolumnami</span>! Tak oto w <span class="bold">1830 roku</span> powstał pierwowzór obecnego pałacu – z takim rozmachem, że nawet sąsiedzi z innych dworów oglądali go z zazdrością.
-Potem przyszedł modny <span class="bold">architekt Podczaszyński</span> i wyczarował dwa piętrowe <span class="bold">ryzality</span> oraz <span class="bold">portyk z kolumnami z żeliwa</span>. Wnętrza wykończono zgodnie z modą na „dużo ozdób, mało minimalizmu”.
-Pałac był niczym <span class="bold">„Oxford dla arystokracji”</span> – przewinęli się tu <span class="bold">Hornowscy</span>, <span class="bold">Zamoyscy</span>, <span class="bold">Downarowiczowie</span> i <span class="bold">Kurnatowscy</span>. W czasie rozkwitu za <span class="bold">Zdzisława Zamoyskiego</span> stajnia była pełna najlepszych rumaków na Mazowszu i Podlasiu, a przy poprawinach śmiano się z francuskich kolejek (<span class="bold">kolej Paryż-Petersburg</span> przejeżdżała praktycznie obok!).
-Gdy <span class="bold">„weselne czasy” minęły</span> i pałac wpadł w ręce państwowe, z sal muzycznych zrobiono <span class="bold">świetlicę</span>, a z <span class="bold">pieców kaflowych... skrytki na listy</span>. Na szczęście nie wszystko zniknęło – <span class="bold">stylowe parkiety</span> i kilka zdobień ocalało!
-A na leżankach poetycki <span class="bold">cyprian Norwid</span> bywał w gościach i szukał inspiracji do wierszy, no bo przecież nie grafomańskich fraszek... (mówią, że jeden wiersz powstał podczas podjadania pałacowego sernika...).
-W <span class="bold">XXI wieku</span> pojawiła się ekipa <span class="bold">Arche S.A.</span>, która pod okiem <span class="bold">Władysława Grochowskiego</span> wymalowała pędzlem nową epokę. Pałac – odrestaurowany, odświeżony, na powrót pełen gości i tanecznych melodii. <span class="bold">Dzisiaj – tak jak dawniej – jest idealnym miejscem na najlepszą zabawę w rodzinnej atmosferze!</span>
-</p>
-</div>
-<div class="section">
-<img src="palac.jpg" loading="lazy" alt="Pałac" class="map centered-img"/>
-</div>
-<div class="section" id="hist-kosciol">
-<h2>Historia Zabytkowego Kościoła</h2>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/bDE66ejBJhU" title="YouTube video player" allowfullscreen></iframe>
-</div>
-<p><span class="bold">Parafialne legendy</span> mówią, że w <span class="bold">1932 roku</span> do <span class="bold">Wólki Dobryńskiej</span> dotarło marzenie: „trzeba nam kaplicy!” Pomysł podsunął <span class="bold">ks. Michalik</span>, ekipa cieśli rzuciła się do pracy, a <span class="bold">architekt Mazur</span> dostał swój „project of the year”. Budowa szła tak szybko, że ponoć nawet <span class="bold">bociany pomagały</span> – powstał <span class="bold">trójnawowy, drewniany kościół</span> z ołtarzem <span class="bold">św. Stanisława Kostki</span>.
-Świątynię zdobiły nie tylko <span class="bold">trzy ołtarze</span>, ale i <span class="bold">chór oraz prezbiterium</span>, a <span class="bold">Grzegorz Mincewicz</span> cieszył się, że „jego dzieło” podziwiają goście i parafianie. Budowa trwała ledwie <span class="bold">cztery miesiące</span> – po czym <span class="bold">biskup Michalik</span> poświęcił obiekt, a w <span class="bold">1933</span> powstała tu parafia <span class="bold">św. Stanisława</span>.
-Kościół wytrzymał <span class="bold">72 lata</span> wesel, świąt i modlitw. Gdy nadszedł <span class="bold">2009 rok</span>, drewniane ściany ruszyły w bajeczną podróż do Łochowa – na pałacowe tereny i w ręce konserwatorów. Tam kościółowi dano „drugą młodość” – a nawet <span class="bold">nowe wezwanie Miłosierdzia Bożego</span>!
-Podczas rekonsekracji w <span class="bold">maju 2010 roku</span> biskup <span class="bold">Antoni Dydycz</span>, proboszczowie oraz goście świętowali nadanie nowego patrona, a <span class="bold">tablica we wnętrzu</span> przypomina o tym żywym kawałku historii.
-Dziś kościół jest nie tylko miejscem modlitwy, ale i pamiątką niesamowitej podróży – od <span class="bold">tętniącej życiem Wólki</span> aż po <span class="bold">magiczne tereny Łochowa</span>!
-</p>
-</div>
-<div class="section">
-<img src="kosciol.jpg" loading="lazy" alt="Kościół" class="map centered-img"/>
-</div>
-<div class="backtotop"><a href="#top">Powrót na górę strony ↑</a></div>
-<div class="contact" id="kontakt">
-<strong>Numery kontaktowe:</strong><br>
-<b>Tel. Ania:</b> <a href="tel:+48692377639">+48692377639</a><br>
-<b>Tel. Andrzej:</b> <a href="tel:+48600019865">+48600019865</a><br>
-<b>Tel. Recepcja:</b> <a href="tel:+48797339329">+48797339329</a><br>
-<b>Tel. Koordynator przyjęcia (Klaudia):</b> <a href="tel:+48530423929">+48530423929</a><br>
-<b>Tel. Menedżer wydarzenia (Marta):</b> <a href="tel:+48664787906">+48664787906</a><br>
-</div>
-</div>
+
+<script>
+    // 1. ZMIANA JĘZYKA
+    function setLanguage(lang) {
+        var allContent = document.querySelectorAll('.lang-content');
+        allContent.forEach(function(el) {
+            el.classList.remove('active');
+        });
+
+        var selectedContent = document.querySelectorAll('.lang-content.' + lang);
+        selectedContent.forEach(function(el) {
+            el.classList.add('active');
+        });
+
+        var buttons = document.querySelectorAll('.lang-btn');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        
+        var activeBtn = document.querySelector('button[onclick="setLanguage(\'' + lang + '\')"]');
+        if(activeBtn) activeBtn.classList.add('active');
+    }
+
+    // 2. LICZNIK I UKRYWANIE SEKCJI
+    var countDownDate = new Date("July 4, 2026 16:00:00").getTime();
+    var disappearDate = new Date("July 4, 2026 16:01:00").getTime();
+    var hideFraszkaRsvpDate = new Date("July 4, 2026 17:00:00").getTime();
+    var hideLocationDate = new Date("July 4, 2026 19:00:00").getTime();
+
+    function checkVisibility() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var distanceToDisappear = disappearDate - now;
+
+        var timerEl = document.getElementById("countdown-timer");
+        if (timerEl) {
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            
+            timerEl.innerHTML = days + "d " + hours + "h " + minutes + "m ";
+
+            if (distanceToDisappear < 0) {
+                document.getElementById("countdown-box").style.display = "none";
+            } else if (distance < 0) {
+                 timerEl.innerHTML = "❤️ !!! ❤️";
+            }
+        }
+
+        // Ukrywanie Fraszki i RSVP
+        if (now > hideFraszkaRsvpDate) {
+            var fraszka = document.getElementById("fraszka");
+            var rsvp = document.getElementById("rsvp");
+            if(fraszka) fraszka.style.display = "none";
+            if(rsvp) rsvp.style.display = "none";
+            
+            var navFraszka = document.getElementById("nav-fraszka");
+            var navRsvp = document.getElementById("nav-rsvp");
+            if(navFraszka) navFraszka.style.display = "none";
+            if(navRsvp) navRsvp.style.display = "none";
+        }
+
+        // Ukrywanie Lokalizacji
+        if (now > hideLocationDate) {
+            var lokalizacja = document.getElementById("lokalizacja");
+            if(lokalizacja) lokalizacja.style.display = "none";
+            
+            var navLok = document.getElementById("nav-lokalizacja");
+            if(navLok) navLok.style.display = "none";
+        }
+    }
+
+    // 3. ANIMACJA WEJŚCIA
+    function checkScroll() {
+        var cards = document.querySelectorAll('.section-card');
+        var windowHeight = window.innerHeight;
+        
+        cards.forEach(function(card) {
+            var position = card.getBoundingClientRect().top;
+            if (position < windowHeight - 50) {
+                card.classList.add('visible');
+            }
+        });
+    }
+
+    setInterval(checkVisibility, 1000);
+    checkVisibility();
+    window.addEventListener('scroll', checkScroll);
+    checkScroll();
+</script>
+
 </body>
 </html>
